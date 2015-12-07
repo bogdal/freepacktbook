@@ -10,8 +10,11 @@ Claim Your `Free PacktPub eBook <https://www.packtpub.com/packt/offers/free-lear
   
   $ claim_free_ebook
 
-``Slack`` notification
-----------------------
+
+Notifications (optional)
+------------------------
+
+``Slack`` **integration**
 
 Set additionally the following environment variables:
 
