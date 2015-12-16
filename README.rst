@@ -9,6 +9,7 @@ Claim Your `Free PacktPub eBook <https://www.packtpub.com/packt/offers/free-lear
 
   $ export PACKTPUB_EMAIL=my@email.com
   $ export PACKTPUB_PASSWORD=my_password
+  $ export PACKTPUB_BOOKS_DIR=/books (optional)
   
   $ claim_free_ebook
 
