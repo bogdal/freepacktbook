@@ -11,6 +11,7 @@ class FreePacktBook(object):
 
     base_url = 'https://www.packtpub.com'
     download_url = base_url + '/ebook_download/%(book_id)s/%(format)s'
+    my_books_url = base_url + '/account/my-ebooks'
     url = base_url + '/packt/offers/free-learning/'
 
     def __init__(self, email=None, password=None):
@@ -18,17 +19,23 @@ class FreePacktBook(object):
         self.email = email
         self.password = password
 
+    def auth_required(func, *args, **kwargs):
+        def decorated(self, *args, **kwargs):
+            if 'SESS_live' not in self.session.cookies:
+                self.session.post(self.url, {
+                    'email': self.email,
+                    'password': self.password,
+                    'form_id': 'packt_user_login_form'})
+            return func(self, *args, **kwargs)
+        return decorated
+
+    @auth_required
     def claim_free_ebook(self):
-        response = self.session.post(self.url, {
-            'email': self.email,
-            'password': self.password,
-            'form_id': 'packt_user_login_form'})
-        page = BeautifulSoup(response.text, 'html.parser')
-        details = self.get_book_details(page)
-        response = self.session.get(details['claim_url'])
+        book = self.get_book_details()
+        response = self.session.get(book['claim_url'])
         assert response.status_code == 200
-        details.update({'url': self.url})
-        return details
+        book.update({'url': self.url})
+        return book
 
     def get_book_details(self, page=None):
         if page is None:
@@ -46,6 +53,7 @@ class FreePacktBook(object):
             'claim_url': self.base_url + claim_url,
             'id': book_id}
 
+    @auth_required
     def download_book(self, book, destination_dir='.'):
         for book_format in ['epub', 'mobi', 'pdf']:
             url = self.download_url % {
@@ -59,6 +67,22 @@ class FreePacktBook(object):
                 for chunk in response.iter_content(chunk_size=1024):
                     if chunk:
                         f.write(chunk)
+
+    @auth_required
+    def my_books(self):
+        books = []
+        response = self.session.get(self.my_books_url)
+        page = BeautifulSoup(response.text, 'html.parser')
+        lines = page.find_all('div', {'class': 'product-line'})
+        for line in lines:
+            if not line.get('nid'):
+                continue
+            books.append({
+                'title': line.find('div', {'class': 'title'}).getText().strip(),
+                'book_url': self.base_url + line.find('div', {
+                    'class': 'product-thumbnail'}).a['href'],
+                'id': line['nid']})
+        return books
 
 
 def claim_free_ebook():
