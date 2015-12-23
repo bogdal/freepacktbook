@@ -14,6 +14,8 @@ class FreePacktBook(object):
     my_books_url = base_url + '/account/my-ebooks'
     url = base_url + '/packt/offers/free-learning/'
 
+    book_formats = ['epub', 'mobi', 'pdf']
+
     def __init__(self, email=None, password=None):
         self.session = requests.Session()
         self.email = email
@@ -54,8 +56,11 @@ class FreePacktBook(object):
             'id': book_id}
 
     @auth_required
-    def download_book(self, book, destination_dir='.', override=False):
-        for book_format in ['epub', 'mobi', 'pdf']:
+    def download_book(self, book, destination_dir='.', formats=None,
+                      override=False):
+        if formats is None:
+            formats = self.book_formats
+        for book_format in formats:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
             name = book['book_url'][book['book_url'].rfind('/')+1:]
