@@ -54,19 +54,20 @@ class FreePacktBook(object):
             'id': book_id}
 
     @auth_required
-    def download_book(self, book, destination_dir='.'):
+    def download_book(self, book, destination_dir='.', override=False):
         for book_format in ['epub', 'mobi', 'pdf']:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
             name = book['book_url'][book['book_url'].rfind('/')+1:]
             filename = '%s/%s.%s' % (destination_dir, name, book_format)
-            response = self.session.get(url, stream=True)
             if not path.exists(destination_dir):
                 mkdir(destination_dir)
-            with open(filename, 'wb') as f:
-                for chunk in response.iter_content(chunk_size=1024):
-                    if chunk:
-                        f.write(chunk)
+            if not path.exists(filename) or override:
+                response = self.session.get(url, stream=True)
+                with open(filename, 'wb') as f:
+                    for chunk in response.iter_content(chunk_size=1024):
+                        if chunk:
+                            f.write(chunk)
 
     @auth_required
     def my_books(self):
