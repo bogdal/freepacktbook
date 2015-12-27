@@ -3,6 +3,7 @@ import re
 
 from bs4 import BeautifulSoup
 import requests
+from tqdm import tqdm
 
 from .slack import SlackNotification
 
@@ -60,10 +61,11 @@ class FreePacktBook(object):
                       override=False):
         if formats is None:
             formats = self.book_formats
-        for book_format in formats:
+        name = book['book_url'][book['book_url'].rfind('/')+1:]
+        pbar = tqdm(formats, leave=True, desc='Downloading %s' % name)
+        for book_format in pbar:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
-            name = book['book_url'][book['book_url'].rfind('/')+1:]
             filename = '%s/%s.%s' % (destination_dir, name, book_format)
             if not path.exists(destination_dir):
                 mkdir(destination_dir)

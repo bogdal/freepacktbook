@@ -12,7 +12,8 @@ setup(
     include_package_data=True,
     install_requires=[
         'beautifulsoup4',
-        'requests'],
+        'requests',
+        'tqdm>=3.4.0'],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
