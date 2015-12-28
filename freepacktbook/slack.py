@@ -3,6 +3,7 @@ import requests
 
 
 class SlackNotification(object):
+    icon_url = 'https://github-bogdal.s3.amazonaws.com/freepacktbook/icon.png'
 
     def __init__(self, slack_url, channel):
         self.slack_url = slack_url
@@ -14,16 +15,14 @@ class SlackNotification(object):
         payload = {
             'channel': self.channel,
             'username': 'PacktPub Free Learning',
-            'icon_emoji': ':books:',
+            'icon_url': self.icon_url,
             'attachments': [{
                 'fallback': 'Today\'s Free eBook: %s' % data['title'],
                 'pretext': 'Today\'s Free eBook:',
+                'title': data['title'],
+                'title_link': data['book_url'],
                 'color': '#ff7f00',
-                'fields': [{
-                    'title': data['title'],
-                    'value': '%s %s' % (
-                        data['description'], data['url']),
-                    'short': False
-                }]
+                'text': '%s\n%s' % (data['description'], data.get('url', '')),
+                'thumb_url': data['image_url']
             }]}
         requests.post(self.slack_url, data={'payload': json.dumps(payload)})
