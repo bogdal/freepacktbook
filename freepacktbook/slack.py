@@ -23,6 +23,6 @@ class SlackNotification(object):
                 'title_link': data['book_url'],
                 'color': '#ff7f00',
                 'text': '%s\n%s' % (data['description'], data.get('url', '')),
-                'thumb_url': data['image_url']
+                'thumb_url': data['image_url'].replace(' ', '%20')
             }]}
         requests.post(self.slack_url, data={'payload': json.dumps(payload)})
