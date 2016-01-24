@@ -94,6 +94,10 @@ class FreePacktBook(object):
 
 
 def claim_free_ebook():
+    if not all([environ.get('PACKTPUB_EMAIL'),
+                environ.get('PACKTPUB_PASSWORD')]):
+        raise ValueError(
+            'Env variables PACKTPUB_EMAIL and PACKTPUB_PASSWORD are required.')
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
     book = client.claim_free_ebook()
