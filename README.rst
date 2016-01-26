@@ -1,6 +1,10 @@
 freepacktbook
 =============
 
+.. image:: https://img.shields.io/pypi/v/freepacktbook.svg   
+     :target: https://pypi.python.org/pypi/freepacktbook
+  
+
 Claim Your `Free PacktPub eBook <https://www.packtpub.com/packt/offers/free-learning>`_ automatically.
 
 .. code-block:: bash
