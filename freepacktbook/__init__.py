@@ -25,10 +25,13 @@ class FreePacktBook(object):
     def auth_required(func, *args, **kwargs):
         def decorated(self, *args, **kwargs):
             if 'SESS_live' not in self.session.cookies:
-                self.session.post(self.url, {
+                response = self.session.post(self.url, {
                     'email': self.email,
                     'password': self.password,
                     'form_id': 'packt_user_login_form'})
+                error_msg = 'invalid email address and password combination'
+                if error_msg in response.text:
+                    raise ValueError(error_msg)
             return func(self, *args, **kwargs)
         return decorated
 
