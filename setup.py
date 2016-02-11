@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='freepacktbook',
-    version='0.0.7',
+    version='0.0.8',
     description='Claim Your Free PacktPub eBook',
     author='Adam Bogdał',
     author_email='adam@bogdal.pl',
