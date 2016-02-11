@@ -8,6 +8,14 @@ from tqdm import tqdm
 from .slack import SlackNotification
 
 
+class ImproperlyConfiguredError(Exception):
+    pass
+
+
+class InvalidCredentialsError(Exception):
+    pass
+
+
 class FreePacktBook(object):
 
     base_url = 'https://www.packtpub.com'
@@ -29,9 +37,10 @@ class FreePacktBook(object):
                     'email': self.email,
                     'password': self.password,
                     'form_id': 'packt_user_login_form'})
-                error_msg = 'invalid email address and password combination'
-                if error_msg in response.text:
-                    raise ValueError(error_msg)
+                page = BeautifulSoup(response.text, 'html.parser')
+                error = page.find('div', {'class': 'messages error'})
+                if error:
+                    raise InvalidCredentialsError(error.getText())
             return func(self, *args, **kwargs)
         return decorated
 
@@ -99,7 +108,7 @@ class FreePacktBook(object):
 def claim_free_ebook():
     if not all([environ.get('PACKTPUB_EMAIL'),
                 environ.get('PACKTPUB_PASSWORD')]):
-        raise ValueError(
+        raise ImproperlyConfiguredError(
             'Env variables PACKTPUB_EMAIL and PACKTPUB_PASSWORD are required.')
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
