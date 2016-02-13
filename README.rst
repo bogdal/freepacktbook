@@ -1,6 +1,9 @@
 freepacktbook
 =============
 
+.. image:: https://img.shields.io/circleci/project/bogdal/freepacktbook/master.svg
+    :target: https://circleci.com/gh/bogdal/freepacktbook/tree/master
+    
 .. image:: https://img.shields.io/pypi/v/freepacktbook.svg   
      :target: https://pypi.python.org/pypi/freepacktbook
   
