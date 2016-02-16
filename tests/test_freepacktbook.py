@@ -2,8 +2,9 @@ import os
 
 import pytest
 
-from freepacktbook import FreePacktBook
+from freepacktbook import FreePacktBook, InvalidCredentialsError
 from vcr import VCR
+
 
 vcr = VCR(path_transformer=VCR.ensure_suffix('.yaml'),
           cassette_library_dir=os.path.join('tests', 'cassettes'))
@@ -29,3 +30,10 @@ def test_my_books(packtpub_client):
     books = packtpub_client.my_books()
     assert books[0]['id'] == BOOK_ID
     assert books[0]['title'] == '%s [eBook]' % (BOOK_TITLE,)
+
+
+@vcr.use_cassette
+def test_user_credentials():
+    client = FreePacktBook('fake@user.com', 'not-real')
+    with pytest.raises(InvalidCredentialsError):
+        client.my_books()
