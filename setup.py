@@ -41,6 +41,7 @@ setup(
     cmdclass={
         'test': PyTest},
     tests_require=[
+        'mock',
         'pytest>=2.8.1',
         'pytest-cov',
         'vcrpy>=1.7.3'],
