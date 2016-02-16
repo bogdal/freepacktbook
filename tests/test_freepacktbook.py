@@ -1,9 +1,16 @@
 import os
+from sys import version_info
 
 import pytest
 
 from freepacktbook import FreePacktBook, InvalidCredentialsError
+from mock import mock_open, patch
 from vcr import VCR
+
+if version_info.major == 2:
+    import __builtin__ as builtins
+else:
+    import builtins
 
 
 vcr = VCR(path_transformer=VCR.ensure_suffix('.yaml'),
@@ -30,6 +37,17 @@ def test_my_books(packtpub_client):
     books = packtpub_client.my_books()
     assert books[0]['id'] == BOOK_ID
     assert books[0]['title'] == '%s [eBook]' % (BOOK_TITLE,)
+
+
+@vcr.use_cassette
+def test_download_book(packtpub_client, monkeypatch):
+    monkeypatch.setattr('freepacktbook.path.exists', lambda x: False)
+    monkeypatch.setattr('freepacktbook.mkdir', lambda x: None)
+    book = packtpub_client.claim_free_ebook()
+    with patch.object(builtins, 'open', mock_open()) as result:
+        packtpub_client.download_book(
+            book, destination_dir='/test',formats=['epub'])
+    assert result.call_args[0][0] == '/test/multithreading-c-50-cookbook.epub'
 
 
 @vcr.use_cassette
