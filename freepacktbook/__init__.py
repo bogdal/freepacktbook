@@ -105,11 +105,20 @@ class FreePacktBook(object):
         return books
 
 
+def env_variables_required(variables):
+    def decorated(func):
+        def new_function():
+            for variable in variables:
+                if not variable in environ:
+                    raise ImproperlyConfiguredError(
+                        'Env variable %s is missing.' % variable)
+            func()
+        return new_function
+    return decorated
+
+
+@env_variables_required(['PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD'])
 def claim_free_ebook():
-    if not all([environ.get('PACKTPUB_EMAIL'),
-                environ.get('PACKTPUB_PASSWORD')]):
-        raise ImproperlyConfiguredError(
-            'Env variables PACKTPUB_EMAIL and PACKTPUB_PASSWORD are required.')
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
     book = client.claim_free_ebook()
@@ -120,3 +129,12 @@ def claim_free_ebook():
     slack_notification = SlackNotification(
         environ.get('SLACK_URL'), environ.get('SLACK_CHANNEL'))
     slack_notification.notify(book)
+
+
+@env_variables_required(['PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD'])
+def download_ebooks():
+    client = FreePacktBook(
+        environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
+    destination = environ.get('PACKTPUB_BOOKS_DIR', 'books')
+    for book in client.my_books():
+        client.download_book(book, destination_dir=destination)

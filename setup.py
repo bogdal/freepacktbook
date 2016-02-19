@@ -56,5 +56,6 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'],
     entry_points={
         'console_scripts': [
-            'claim_free_ebook = freepacktbook:claim_free_ebook']},
+            'claim_free_ebook = freepacktbook:claim_free_ebook',
+            'download_ebooks = freepacktbook:download_ebooks']},
     zip_safe=False)
