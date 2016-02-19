@@ -23,7 +23,7 @@ interactions:
       expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
       location: ['https://www.packtpub.com/packt/offers/free-learning']
       server: [nginx/1.4.5]
-      set-cookie: ['SESS_live=tptgrs45rpopovs0biml2f5ku5; expires=Fri, 19-Feb-2016
+      set-cookie: ['SESS_live=tptgrs45rpopovs0biml2f5ku5; expires=Fri, 19-Feb-2099
           21:32:30 GMT; path=/; domain=.packtpub.com', 'SESS_live=jdis0fiudslfksldfji2342lkdjfldf;
           expires=Fri, 19-Feb-2016 21:32:31 GMT; path=/; domain=.packtpub.com']
       via: [1.1 varnish]
