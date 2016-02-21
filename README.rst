@@ -20,6 +20,12 @@ Claim Your `Free PacktPub eBook <https://www.packtpub.com/packt/offers/free-lear
   
   $ claim_free_ebook
 
+``freepacktbook`` allows you to backup all your ebooks in all formats.
+
+.. code-block:: bash
+
+    $ export PACKTPUB_BOOKS_DIR=/books
+    $ download_ebooks
 
 Notifications (optional)
 ------------------------
