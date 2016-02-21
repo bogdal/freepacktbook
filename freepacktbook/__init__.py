@@ -131,10 +131,11 @@ def claim_free_ebook():
     slack_notification.notify(book)
 
 
-@env_variables_required(['PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD'])
+@env_variables_required([
+    'PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD', 'PACKTPUB_BOOKS_DIR'])
 def download_ebooks():
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
-    destination = environ.get('PACKTPUB_BOOKS_DIR', 'books')
+    destination = environ.get('PACKTPUB_BOOKS_DIR')
     for book in client.my_books():
         client.download_book(book, destination_dir=destination)
