@@ -17,6 +17,7 @@ vcr = VCR(path_transformer=VCR.ensure_suffix('.yaml'),
           cassette_library_dir=os.path.join('tests', 'cassettes'))
 
 BOOK_TITLE = 'Multithreading in C# 5.0 Cookbook'
+BOOK_SLUG = 'multithreading-in-c-5-0-cookbook'
 BOOK_ID = '12544'
 
 
@@ -47,7 +48,7 @@ def test_download_book(packtpub_client, monkeypatch):
     with patch.object(builtins, 'open', mock_open()) as result:
         packtpub_client.download_book(
             book, destination_dir='/test',formats=['epub'])
-    assert result.call_args[0][0] == '/test/multithreading-c-50-cookbook.epub'
+    assert result.call_args[0][0] == '/test/%s.epub' % (BOOK_SLUG,)
 
 
 @vcr.use_cassette

@@ -3,6 +3,7 @@ import re
 
 from bs4 import BeautifulSoup
 import requests
+from slugify import slugify
 from tqdm import tqdm
 
 from .slack import SlackNotification
@@ -19,6 +20,7 @@ class InvalidCredentialsError(Exception):
 class FreePacktBook(object):
 
     base_url = 'https://www.packtpub.com'
+    code_files_url = base_url + '/code_download/%(id)s'
     download_url = base_url + '/ebook_download/%(book_id)s/%(format)s'
     my_books_url = base_url + '/account/my-ebooks'
     url = base_url + '/packt/offers/free-learning/'
@@ -43,6 +45,16 @@ class FreePacktBook(object):
                     raise InvalidCredentialsError(error.getText())
             return func(self, *args, **kwargs)
         return decorated
+
+    def download_file(self, url, file_path, override=False):
+        if not path.exists(path.dirname(file_path)):
+            mkdir(path.dirname(file_path))
+        if not path.exists(file_path) or override:
+            response = self.session.get(url, stream=True)
+            with open(file_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=1024):
+                    if chunk:
+                        f.write(chunk)
 
     @auth_required
     def claim_free_ebook(self):
@@ -73,20 +85,20 @@ class FreePacktBook(object):
                       override=False):
         if formats is None:
             formats = self.book_formats
-        name = book['book_url'][book['book_url'].rfind('/')+1:]
-        pbar = tqdm(formats, leave=True, desc='Downloading %s' % name)
+        pbar = tqdm(formats, leave=True, desc='Downloading %s' % book['title'])
         for book_format in pbar:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
-            filename = '%s/%s.%s' % (destination_dir, name, book_format)
-            if not path.exists(destination_dir):
-                mkdir(destination_dir)
-            if not path.exists(filename) or override:
-                response = self.session.get(url, stream=True)
-                with open(filename, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=1024):
-                        if chunk:
-                            f.write(chunk)
+            file_path = '%s/%s.%s' % (
+                destination_dir, slugify(book['title']), book_format)
+            self.download_file(url, file_path, override=override)
+
+    @auth_required
+    def download_code_files(self, book, destination_dir='.', override=False):
+        url = self.code_files_url % {'id': int(book['id']) + 1}
+        file_path = '%s/%s_code.zip' % (
+            destination_dir, slugify(book['title']))
+        self.download_file(url, file_path, override=override)
 
     @auth_required
     def my_books(self):
