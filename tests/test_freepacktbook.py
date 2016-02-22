@@ -52,6 +52,17 @@ def test_download_book(packtpub_client, monkeypatch):
 
 
 @vcr.use_cassette
+def test_download_code_files(packtpub_client, monkeypatch):
+    monkeypatch.setattr('freepacktbook.path.exists', lambda x: False)
+    monkeypatch.setattr('freepacktbook.mkdir', lambda x: None)
+    book = packtpub_client.claim_free_ebook()
+    with patch.object(builtins, 'open', mock_open()) as result:
+        packtpub_client.download_code_files(
+            book, destination_dir='/test')
+    assert result.call_args[0][0] == '/test/%s_code.zip' % (BOOK_SLUG,)
+
+
+@vcr.use_cassette
 def test_user_credentials():
     client = FreePacktBook('fake@user.com', 'not-real')
     with pytest.raises(InvalidCredentialsError):
