@@ -51,10 +51,18 @@ class FreePacktBook(object):
             mkdir(path.dirname(file_path))
         if not path.exists(file_path) or override:
             response = self.session.get(url, stream=True)
+            total = int(response.headers['Content-Length'])
+            filename = path.split(file_path)[1]
+            chunk_size = 1024
+            progress = tqdm(
+                total=total, leave=True, unit_scale=chunk_size,
+                desc='Downloading %s' % (filename,))
             with open(file_path, 'wb') as f:
-                for chunk in response.iter_content(chunk_size=1024):
+                for chunk in response.iter_content(chunk_size=chunk_size):
                     if chunk:
                         f.write(chunk)
+                        progress.update(chunk_size)
+            progress.close()
 
     @auth_required
     def claim_free_ebook(self):
@@ -85,19 +93,18 @@ class FreePacktBook(object):
                       override=False):
         if formats is None:
             formats = self.book_formats
-        pbar = tqdm(formats, leave=True, desc='Downloading %s' % book['title'])
-        for book_format in pbar:
+        for book_format in formats:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
-            file_path = '%s/%s.%s' % (
-                destination_dir, slugify(book['title']), book_format)
+            slug = slugify(book['title'], separator='_')
+            file_path = '%s/%s.%s' % (destination_dir, slug, book_format)
             self.download_file(url, file_path, override=override)
 
     @auth_required
     def download_code_files(self, book, destination_dir='.', override=False):
         url = self.code_files_url % {'id': int(book['id']) + 1}
         file_path = '%s/%s_code.zip' % (
-            destination_dir, slugify(book['title']))
+            destination_dir, slugify(book['title'], separator='_'))
         self.download_file(url, file_path, override=override)
 
     @auth_required

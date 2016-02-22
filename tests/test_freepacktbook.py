@@ -17,7 +17,7 @@ vcr = VCR(path_transformer=VCR.ensure_suffix('.yaml'),
           cassette_library_dir=os.path.join('tests', 'cassettes'))
 
 BOOK_TITLE = 'Multithreading in C# 5.0 Cookbook'
-BOOK_SLUG = 'multithreading-in-c-5-0-cookbook'
+BOOK_SLUG = 'multithreading_in_c_5_0_cookbook'
 BOOK_ID = '12544'
 
 
