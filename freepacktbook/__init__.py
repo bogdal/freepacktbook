@@ -51,11 +51,13 @@ class FreePacktBook(object):
             mkdir(path.dirname(file_path))
         if not path.exists(file_path) or override:
             response = self.session.get(url, stream=True)
-            total = int(response.headers['Content-Length'])
+            total = int(response.headers.get('Content-Length', 0))
+            if not total:
+                return
             filename = path.split(file_path)[1]
             chunk_size = 1024
             progress = tqdm(
-                total=total, leave=True, unit_scale=chunk_size,
+                total=total, leave=True, unit_scale=chunk_size, unit='B',
                 desc='Downloading %s' % (filename,))
             with open(file_path, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=chunk_size):
