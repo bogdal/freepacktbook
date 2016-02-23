@@ -1,4 +1,5 @@
 from os import environ, mkdir, path
+import argparse
 import re
 
 from bs4 import BeautifulSoup
@@ -155,8 +156,26 @@ def claim_free_ebook():
 @env_variables_required([
     'PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD', 'PACKTPUB_BOOKS_DIR'])
 def download_ebooks():
+    parser = argparse.ArgumentParser(description='Download all my ebooks')
+    parser.add_argument(
+        '--force', action='store_true', help='override existing files'),
+    parser.add_argument(
+        '--formats', nargs='+', metavar='FORMAT',
+        help='ebook formats (epub, mobi, pdf)')
+    parser.add_argument(
+        '--with-code-files', action='store_true', help='download code files')
+    args = parser.parse_args()
+    formats = args.formats
+    if formats:
+        formats = filter(lambda x: x in FreePacktBook.book_formats, formats)
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
     destination = environ.get('PACKTPUB_BOOKS_DIR')
     for book in client.my_books():
-        client.download_book(book, destination_dir=destination)
+        kwargs = {
+            'book': book,
+            'destination_dir': destination,
+            'override': args.force}
+        client.download_book(formats=formats, **kwargs)
+        if args.with_code_files:
+            client.download_code_files(**kwargs)
