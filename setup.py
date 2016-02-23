@@ -36,6 +36,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'beautifulsoup4',
+        'python-slugify>=1.2.0',
         'requests',
         'tqdm>=3.4.0'],
     cmdclass={

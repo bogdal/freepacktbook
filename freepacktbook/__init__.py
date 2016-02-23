@@ -1,8 +1,10 @@
 from os import environ, mkdir, path
+import argparse
 import re
 
 from bs4 import BeautifulSoup
 import requests
+from slugify import slugify
 from tqdm import tqdm
 
 from .slack import SlackNotification
@@ -19,6 +21,7 @@ class InvalidCredentialsError(Exception):
 class FreePacktBook(object):
 
     base_url = 'https://www.packtpub.com'
+    code_files_url = base_url + '/code_download/%(id)s'
     download_url = base_url + '/ebook_download/%(book_id)s/%(format)s'
     my_books_url = base_url + '/account/my-ebooks'
     url = base_url + '/packt/offers/free-learning/'
@@ -43,6 +46,26 @@ class FreePacktBook(object):
                     raise InvalidCredentialsError(error.getText())
             return func(self, *args, **kwargs)
         return decorated
+
+    def download_file(self, url, file_path, override=False):
+        if not path.exists(path.dirname(file_path)):
+            mkdir(path.dirname(file_path))
+        if not path.exists(file_path) or override:
+            response = self.session.get(url, stream=True)
+            total = int(response.headers.get('Content-Length', 0))
+            if not total:
+                return
+            filename = path.split(file_path)[1]
+            chunk_size = 1024
+            progress = tqdm(
+                total=total, leave=True, unit_scale=chunk_size, unit='B',
+                desc='Downloading %s' % (filename,))
+            with open(file_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=chunk_size):
+                    if chunk:
+                        f.write(chunk)
+                        progress.update(chunk_size)
+            progress.close()
 
     @auth_required
     def claim_free_ebook(self):
@@ -73,20 +96,19 @@ class FreePacktBook(object):
                       override=False):
         if formats is None:
             formats = self.book_formats
-        name = book['book_url'][book['book_url'].rfind('/')+1:]
-        pbar = tqdm(formats, leave=True, desc='Downloading %s' % name)
-        for book_format in pbar:
+        for book_format in formats:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
-            filename = '%s/%s.%s' % (destination_dir, name, book_format)
-            if not path.exists(destination_dir):
-                mkdir(destination_dir)
-            if not path.exists(filename) or override:
-                response = self.session.get(url, stream=True)
-                with open(filename, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=1024):
-                        if chunk:
-                            f.write(chunk)
+            slug = slugify(book['title'], separator='_')
+            file_path = '%s/%s.%s' % (destination_dir, slug, book_format)
+            self.download_file(url, file_path, override=override)
+
+    @auth_required
+    def download_code_files(self, book, destination_dir='.', override=False):
+        url = self.code_files_url % {'id': int(book['id']) + 1}
+        file_path = '%s/%s_code.zip' % (
+            destination_dir, slugify(book['title'], separator='_'))
+        self.download_file(url, file_path, override=override)
 
     @auth_required
     def my_books(self):
@@ -134,8 +156,26 @@ def claim_free_ebook():
 @env_variables_required([
     'PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD', 'PACKTPUB_BOOKS_DIR'])
 def download_ebooks():
+    parser = argparse.ArgumentParser(description='Download all my ebooks')
+    parser.add_argument(
+        '--force', action='store_true', help='override existing files'),
+    parser.add_argument(
+        '--formats', nargs='+', metavar='FORMAT',
+        help='ebook formats (epub, mobi, pdf)')
+    parser.add_argument(
+        '--with-code-files', action='store_true', help='download code files')
+    args = parser.parse_args()
+    formats = args.formats
+    if formats:
+        formats = filter(lambda x: x in FreePacktBook.book_formats, formats)
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
     destination = environ.get('PACKTPUB_BOOKS_DIR')
     for book in client.my_books():
-        client.download_book(book, destination_dir=destination)
+        kwargs = {
+            'book': book,
+            'destination_dir': destination,
+            'override': args.force}
+        client.download_book(formats=formats, **kwargs)
+        if args.with_code_files:
+            client.download_code_files(**kwargs)

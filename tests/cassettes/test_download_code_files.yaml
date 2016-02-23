@@ -1,0 +1,1716 @@
+interactions:
+- request:
+    body: password=mypassword&email=test%40example.com&form_id=packt_user_login_form
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['118']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.8.1]
+    method: POST
+    uri: https://www.packtpub.com/packt/offers/free-learning/
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      accept-ranges: [bytes]
+      age: ['0']
+      cache-control: ['store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-length: ['0']
+      content-type: [text/html; charset=utf-8]
+      date: ['Tue, 16 Feb 2016 21:32:37 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      location: ['https://www.packtpub.com/packt/offers/free-learning']
+      server: [nginx/1.4.5]
+      set-cookie: ['SESS_live=tptgrs45rpopovs0biml2f5ku5; expires=Fri, 19-Feb-2099
+          21:32:30 GMT; path=/; domain=.packtpub.com', 'SESS_live=jdis0fiudslfksldfji2342lkdjfldf;
+          expires=Fri, 19-Feb-2016 21:32:31 GMT; path=/; domain=.packtpub.com']
+      via: [1.1 varnish]
+      x-country-code: [NL]
+    status: {code: 302, message: Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Type: [application/x-www-form-urlencoded]
+      Cookie: [SESS_live=jdis0fiudslfksldfji2342lkdjfldf]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: https://www.packtpub.com/packt/offers/free-learning
+  response:
+    body: {string: "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        lang=\"en\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Free Learning | PACKT Books</title>\n\t\t<script>\n\t\t\tdataLayer
+        = [];\n\t\t</script>\n\t\t<script type=\"text/javascript\">\n\t\t\tvar GRANIFY_SITE_ID
+        = 1318;(function(e,t,n){var r,i,s,o,u;u=false;try{o=new RegExp(\"(?:^|\\\\W)_gr_test_url=([^;]*)\");s=document.cookie.match(o);if(s){if(s[1]===\"1\")u=true}else{r=Math.random();if(r>.95)u=true;i=new
+        Date(+(new Date)+1e3*60*60*24*2);document.cookie=\"_gr_test_url=\"+ +u+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}if(u)e.replace(\"javascript.js\",\"javascript.next.js\");try{o=new
+        RegExp(\"(?:^|\\\\W)_gr_ep=([^;]*)\");s=document.cookie.match(o);if(!s){document.cookie=\"_gr_ep_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";document.cookie=\"_gr_er_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";if(!window.location.origin){if(window.location.port)port=\":\"+window.location.port;else
+        port=\"\";window.location.origin=window.location.protocol+\"//\"+window.location.hostname+port}path=window.location.toString().replace(window.location.origin,\"\");referrer=document.referrer;i=new
+        Date(+(new Date)+1e3*60*30);document.cookie=\"_gr_ep=\"+path+\";expires=\"+i.toGMTString()+\";path=/\";document.cookie=\"_gr_er=\"+referrer+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}a=new
+        Date;a=\"\"+a.getUTCFullYear()+(a.getUTCMonth()+1)+a.getUTCDate();e=e+\"?id=\"+t+\"&v=\"+a;window.Granify=n;n._stack=[];n.init=function(e,t,r){function
+        i(e,t){e[t]=function(){Granify._stack.push([t].concat(Array.prototype.slice.call(arguments,0)))}}var
+        s=n;h=[\"on\",\"identify\",\"addTag\",\"trackPageView\",\"trackCart\",\"trackOrder\"];for(a=0;a<h.length;a++)i(s,h[a])};n.init();var
+        f,l,c,p=document.createElement(\"iframe\");p.src=\"javascript:false\";p.title=\"\";p.role=\"presentation\";(p.frameElement||p).style.cssText=\"width:
+        0 !important; height: 0 !important; border: 0 !important; overflow: hidden
+        !important; position: absolute !important; top: -1000px !important; left:
+        -1000px !important;\";c=document.getElementsByTagName(\"script\");c=c[c.length-1];c.parentNode.insertBefore(p,c);try{l=p.contentWindow.document}catch(a){f=document.domain;p.src=\"javascript:var
+        d=document.open();d.domain='\"+f+\"';void(0);\";l=p.contentWindow.document}l.open()._l=function(){var
+        t=this.createElement(\"script\");if(f)this.domain=f;t.id=\"js-iframe-async\";t.src=e;this.body.appendChild(t)};l.write('<body
+        onload=\"document._l();\">');l.close()})(\"//cdn.granify.com/assets/javascript.js\",GRANIFY_SITE_ID,[])\n\t\t</script>\n\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\tGranify.trackPageView({\n\t\t\t  page_type:
+        \"collection\"\n\t\t\t});\n\t\t</script>\n\t\t<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\n<link rel=\"shortcut icon\" href=\"//d1ldz4te4covpm.cloudfront.net/misc/favicon.ico\"
+        type=\"image/x-icon\" />\n<meta name=\"description\" content=\"A new free
+        programming tutorial book every day! Develop new tech skills and knowledge
+        with Packt Publishing\u2019s daily free learning giveaway.\" />\n<meta name=\"revisit-after\"
+        content=\"1 day\" />\n\t\t<link rel=\"canonical\" href=\"www.packtpub.com/packt/offers/free-learning\"
+        />\n\t\t\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\t\t<meta
+        id=\"viewport\" name=\"viewport\" content=\"width=320, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=0\">\n\t\t<!-- <link href=\"//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic\"
+        rel=\"stylesheet\" type=\"text/css\">-->\n\t\t <link href=\"/sites/all/themes/packt_v4/fonts/ubuntu.css\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t\t<!--[if lt IE 10]>\n\t\t\t<link
+        href=\"/sites/all/themes/packt_v4/css/core/packtpub_ie.css\" rel=\"stylesheet\"
+        type=\"text/css\">\n\t\t\t<![endif]-->\n\t\t\t<link type=\"text/css\" rel=\"stylesheet\"
+        media=\"all\" href=\"/sites/default/files/css/1455547277792afdf4/78f9098398df991675d32855ba33c2b5.css\"
+        />\n<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"/sites/default/files/css/1455547277792afdf4/6e295a6eb8f64cef4e07d9b1f02d46e8.css\"
+        />\n  \n\t\t\t<script type=\"text/javascript\" src=\"/sites/default/files/js/1455547277c262a2e7/a3788c8c64fd65c470e23e7534c3ebc8.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\njQuery.extend(Drupal.settings,
+        { \"basePath\": \"\\u002F\", \"dhtmlMenu\": [ \"doubleclick\", \"clone\" ]
+        });\n//--><!]]>\n</script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar
+        Packt = Packt || {}; Packt.user = {\"uid\":1917745,\"name\":\"John Doe\",\"mail\":\"user@example.com\",\"sid\":\"jdis0fiudslfksldfji2342lkdjfldf\",\"cart_id\":1917745,\"cart\":[],\"newsletters\":{\"60\":true,\"280\":true,\"281\":true,\"286\":true,\"287\":true,\"289\":true},\"country_code\":\"DE\",\"selected_currency\":\"EUR\",\"currency\":\"EUR\",\"currency_symbol\":\"\\u20ac\"};\n\t\t\t</script>\n\t\t\t<link
+        rel=\"alternate\" type=\"application/rss+xml\" href=\"/rss.xml\" title=\"Packt
+        Publishing News\" >\n\t\t\t<script>\n\t\t\t\t(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){\n\t\t\t\t\t(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\n\t\t\t\t\tm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n\t\t\t\t})(window,document,\"script\",\"//www.google-analytics.com/analytics.js\",\"ga\");\n\t\t\t\tga(\"create\",
+        \"UA-284627-1\", \"packtpub.com\", {\"siteSpeedSampleRate\": 100});\n\t\t\t\tga(\"require\",
+        \"displayfeatures\");\n\t\t\t\tga('require', 'ec');\n\t\t\t\tga(\"send\",
+        \"pageview\");\n\t\t\t\t\t\t\t\t//ga(\"require\", \"ecommerce\", \"ecommerce.js\");\n\n\t\t\t\t\n\t\t\t</script>\n\t</head>\n\t\n\t<body
+        id=\"ppv4\" class=\"with-logo\">\n\t\t<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-NJWZFW\"\n\t\t\theight=\"0\"
+        width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n\t\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\t\tnew
+        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\t\t})(window,document,'script','dataLayer','GTM-NJWZFW');Packt.dataLayer.init();</script>\n\n\t\t<div
+        id=\"page\" class=\"\" checkout=\"\">\n\t\t\t<div id=\"page-header\">\n\t\t\t\t\t\t\t<div
+        id=\"account-bar\" class=\"cf\">\n\t\t\t\t<div class=\"section-inner\">\n\t\t\t\t\t<div
+        id=\"account-bar-status\" class=\"cf\">\n\t\t\t\t\t\t<div id=\"account-bar-currency-selector\">\n\t\t\t\t\t\t\t<form
+        accept-charset=\"UTF-8\" method=\"post\" id=\"packt-currency-select-form\"
+        class=\"float-left\">\n\t\t\t\t\t\t\t\t<div class=\"form-item\" id=\"edit-currency-wrapper\">\n\t\t\t\t\t\t\t\t\t<select
+        name=\"currency\" class=\"form-select packt-currency-select-box selectBox\"
+        id=\"edit-currency\" style=\"display:none\">\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"GBP\" >GBP &#163;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"USD\"
+        >US &#36;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"EUR\" >EUR &#8364;</option>\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"AUD\" >AU &#36;</option>\n\t\t\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<input
+        type=\"submit\" name=\"op\" value=\"\" style=\"display: none;\" class=\"form-submit\">\t\t\t\n\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"form_id\" id=\"edit-packt-currency-select\" value=\"packt_currency_select_form\">\n\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t</div>\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\t\n\t\t\t\t\t\t<div id=\"account-bar-status-security\"></div>\n\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t<div
+        id=\"account-bar-login-register-ns\">\n\t\t\t\t\t\t\t\t<a href=\"/account\">My
+        Account</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t<div
+        id=\"account-bar-login-register\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"login-popup\"><div
+        class=\"float-left\">Log in</div></a>\n\t\t\t\t\t\t\t<div class=\"account-bar-divider
+        float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/register\"><div class=\"float-left\">Register</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-logged-in\">\n\t\t\t\t\t\t\t<a href=\"/account\">\n\t\t\t\t\t\t\t\t<div
+        class=\"float-left\"><strong>My Account</strong></div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/logout\"><div
+        class=\"float-left\">Sign out</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"account-bar-form\">\n\t\t\t\t\t\t<div id=\"account-bar-form-login\" class=\"cf\">\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-left\">\n\t\t\t\t\t\t\t\t<h4>Log in to your account</h4>\n\t\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-user-login-form\">\n<div><div
+        id=\"login-form\" class=\"cf\">\n\t<div id=\"login-form-email\">\n\t\t<div
+        class=\"form-item\" id=\"email-wrapper\">\n <input type=\"text\" maxlength=\"128\"
+        name=\"email\" id=\"email\" size=\"24\" value=\"\" placeholder=\"E-mail address\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-pass\">\n\t\t<div
+        class=\"form-item\" id=\"password-wrapper\">\n <input type=\"password\" name=\"password\"
+        id=\"password\"  maxlength=\"128\"  size=\"24\"  placeholder=\"Password\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-submit\">\n\t\t<input
+        type=\"submit\" name=\"op\" id=\"edit-submit-1\" value=\"Login\"  class=\"
+        form-submit\" />\n\t</div>\n\t<br />\n</div>\n<a href=\"https://www.packtpub.com/account/password\">Forgotten
+        your password?</a>\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-6b3d9aaaabc48f9d674ae0940608a746\"
+        value=\"form-6b3d9aaaabc48f9d674ae0940608a746\"  />\n\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-user-login-form-form-token\" value=\"4230f31d596de1b32b84a2ae8e18b9c5\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-user-login-form\"
+        value=\"packt_user_login_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div></form>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-right\">\n\t\t\t\t\t\t\t\t<h4>Not yet a member?</h4>\n\t\t\t\t\t\t\t\t<p>Register
+        for an account and access leading-edge content on emerging technologies.</p>\n\t\t\t\t\t\t\t\t<p><a
+        class=\"account-bar-toggle register\" href=\"/register\">Register now</a></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-form-close\"><a href=\"#\">Close</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar\">\n\t\t\t\t<div class=\"section-inner cf\">\n\t\t\t\t\t<div
+        id=\"menuIcon\"></div>\n\t\t\t\t\t<div id=\"menu-links\" class=\"\">\n\t\t\t\t\t\t<a
+        href=\"/\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text dummy\" id=\"menu-packt-logo\">\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Packt Logo</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/all\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-books\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Books
+        & Videos</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/blogs\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-blog\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Blog</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/info/packt/about\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-packt\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Packt</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/support\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-support\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Support</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        href=\"/packtlib\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab menu-item-tab
+        pl-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-text\" id=\"menu-packtlib\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-dark.png\"></span>\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text mob-pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-light.png\"></span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"menu-icons\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\"
+        id=\"menu-search\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"alt\">Search</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/collection\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-icon dummy\" id=\"menu-collection\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">My Collection</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab
+        last\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\" id=\"menu-cart\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"cart-icon-count\" class=\"cart-icon-count\"></div>\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Cart</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        id=\"menu-bar-popup\" class=\"cf\">\t\n\t\t\t\t<div id=\"menu-bar-popup-inner\"
+        class=\"cf\"></div>\t\n\t\t\t\t<div class=\"section-inner cf\">\t\n\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu threecol cf\" id=\"menu-books-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left threecol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Book & Video Categories</p>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"books-menu\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class='books-menu-column categories '><div class='inner'><p><a href=\"/web-development\">Web
+        Development</a></p><p><a href=\"/big-data-and-business-intelligence\">Big
+        Data & Business Intelligence</a></p><p><a href=\"/application-development\">Application
+        Development</a></p><p><a href=\"/virtualization-and-cloud\">Virtualization
+        & Cloud</a></p></div></div><div class='books-menu-column categories '><div
+        class='inner'><p><a href=\"/game-development\">Game Development</a></p><p><a
+        href=\"/networking-and-servers\">Networking & Servers</a></p><p><a href=\"/hardware-and-creative\">Hardware
+        & Creative</a></p><p><a href=\"/business\">Business</a></p></div></div><div
+        class='books-menu-column categories last'><div class='inner'><p><a href=\"/all\">All
+        Books</a></p><p><a href=\"/video\">All Videos</a></p><p><a href=\"/latest-releases\">Latest
+        Releases</a></p></div></div>\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right threecol\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right-inner cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"deal-of-the-day-banner\"
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-dotd-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/books/deal-of-the-day\">\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3758OS_4829_Python
+        GUI Programming Cookbook_0.jpg\" alt=\"Python GUI Programming Cookbook\" title=\"\"
+        width=\"150\" height=\"185\" class=\"lazyload-disabled imagecache imagecache-featured_book_block\"/>\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-dotd-percentage\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"menu-bar-dotd-percentage-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t50<sup
+        class=\"dotd-sup\">%</sup><div class=\"dotd-sub\">off</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-dotd-preview-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/deal-of-the-day\">Deal of the Day</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p>Over
+        80 object-oriented recipes to help you create mind-blowing GUIs in Python</p>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf deal-of-the-day-in-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"dots-main-book-price
+        float-left\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-top-pricing-main-price\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-top-pricing-main-ebook-price  \">\u20AC19.96</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-rrp-price\">RRP \u20AC39.91</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<form
+        action=\"/add_to_cart/22857\"  accept-charset=\"UTF-8\" method=\"post\" id=\"packt-libraries-add-to-cart-form\"
+        class=\"packt-libraries-add-to-cart-form\">\n<div>\n<div class=\"book-top-addtocart-inner\">\t\n\t<div
+        class=\"book-top-addtocart-logo\"></div>\n\t<div class=\"book-top-addtocart-separator\"></div>\n\t\n\t<input
+        type=\"submit\" name=\"submit-22857\" id=\"submit-22857\" value=\"Add to Cart\"
+        \ class=\" form-submit\" />\n\t<input type=\"hidden\" name=\"nids\" id=\"nids\"
+        value=\"22857\"  />\n\n<input type=\"hidden\" name=\"qtys\" id=\"qtys\" value=\"1\"
+        \ />\n\n<input type=\"hidden\" name=\"upsell\" id=\"edit-upsell\" value=\"1\"
+        \ />\n\n\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-971fb5ee61361b2f2335351f96e63ee9\"
+        value=\"form-971fb5ee61361b2f2335351f96e63ee9\"  />\n\n<input type=\"hidden\"
+        name=\"form_id\" id=\"edit-packt-libraries-add-to-cart-form\" value=\"packt_libraries_add_to_cart_form\"
+        \ />\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf newsletter-signup-form\" newsletter_id=280>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-signup-text\"><strong>Sign up here to get these deals straight
+        to your inbox</strong></div> \n\t\t\t\t\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-v3-subscribtion-dotd-form\">\n<div><div class=\"form-item\">\n
+        \n</div>\n<div class=\"form-item\" id=\"edit-mail-wrapper\">\n <input type=\"text\"
+        maxlength=\"128\" name=\"mail\" id=\"edit-mail\" size=\"60\" value=\"\" placeholder=\"Enter
+        your email address\" class=\"form-text\" />\n</div>\n<input type=\"hidden\"
+        name=\"newsletter_id\" id=\"edit-newsletter-id\" value=\"\"  />\n<input type=\"submit\"
+        name=\"op\" id=\"edit-submit-3\" value=\"Submit\"  class=\" form-submit\"
+        />\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-41bfa48e3591820419e87bdbd5fb48c7\"
+        value=\"form-41bfa48e3591820419e87bdbd5fb48c7\"  />\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token\"
+        value=\"eac9d5060051dd2b361fed958cd6ee11\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu twocol cf\" id=\"menu-blog-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Blog</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/content/blogs\">Blogs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/tech-hub\">Tech Hub</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/article-network\">Articles</a></p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" alt=\"OpenStack and Software Defined Networking\" title=\"\"
+        width=\"240\" height=\"114\" class=\"lazyload-disabled imagecache imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/openstack-and-software-defined-networking-0\">OpenStack
+        and Software Defined Networking</a></p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-article-one-liner\">One
+        of the key benefits of OpenStack is the ability to control and integrate with
+        Software Defined Networking (SDN) controllers. This article takes a look at
+        what SDN is, and how OpenStack makes it accessible.</p>\n\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/blogs\">Read all our blogs</a></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packt-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Packt Publishing</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/about\">About
+        Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/authors\">Our
+        Authors</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/trade-partners\">Trade
+        & Partners</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a href=\"/blog-network\">Blog</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/techprimer-network\">Technology Primers</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/contact-us\">Contact Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/careers-with-packt\">Careers</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a
+        href=\"/article-network\">Articles</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<!--<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" alt=\"OpenStack and Software Defined Networking\" title=\"\"
+        width=\"240\" height=\"114\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/></noscript><img
+        src=\"/sites/default/files/blank.gif\" alt=\"OpenStack and Software Defined
+        Networking\" title=\"\" width=\"240\" height=\"114\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/openstack-and-software-defined-networking-0\">OpenStack
+        and Software Defined Networking</a></p>\n\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-article-one-liner\"></p>\n\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/articles\">Read all our articles</a></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>-->\n\t\t\t\t\t</div>\n\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-support-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Support</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/faq\">FAQs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/ordering\">Ordering Information</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/terms-and-conditions\">Terms & Conditions</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/support\">Code Downloads & Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/errata\">Submit Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packtlib-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">PacktLib</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/subscription/packtlib\">Subscribe</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/subscription/packtlib-business\">PacktLib For Business</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/packtlib\">Take me to the Library</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-search-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-search-inner\">\n\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-libraries-main-search-form\">\n<div>\n<div id=\"menu-bar-search\"
+        class=\"cf\">\n\t<div id=\"menu-bar-search-title\">\n\t\t<div class=\"form-item\">Search</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-box\">\n\t\t<div class=\"form-item\" id=\"main-search-keys-wrapper\">\n
+        <input type=\"text\" name=\"keys\" id=\"main-search-keys\" size=\"49\" value=\"\"
+        placeholder=\"Enter your search terms...\" class=\"form-text\" />\n</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-button\">\n\t\t<input type=\"submit\" name=\"op\" id=\"edit-submit-5\"
+        value=\"Search\"  class=\" form-submit\" />\n\t</div>\n\t<input type=\"hidden\"
+        name=\"sort\" id=\"edit-sort\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"types\"
+        id=\"edit-types\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"forthcoming\"
+        id=\"edit-forthcoming\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"available\"
+        id=\"edit-available\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"count\"
+        id=\"edit-count\" value=\"20\"  />\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-0537e8bbb12f6a3e44326024b78564a5\" value=\"form-0537e8bbb12f6a3e44326024b78564a5\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-libraries-main-search-form\"
+        value=\"packt_libraries_main_search_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n</div>\n<div
+        class=\"facet-search-cross facet-search-cross-autocomplete\"></div>\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-preview\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-popup-cart-item-preview\">\n\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-item-preview-image\">\n\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"\" />\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Added
+        to Cart</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-cart-item-preview-title\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-oneliner\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-additional\">...and <span></span> more</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        class=\"price\"><span id=\"menu-bar-popup-cart-item-preview-currency\"></span><span
+        id=\"menu-bar-popup-cart-item-preview-price\"></span></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-empty-preview\">\n\t\t\t\t\t\t\t\t\tYou don't have
+        anything in your cart right now.\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-content\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-title\"
+        class=\"menu-bar-popup-title float-left\">Subtotal</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-subtotal-value\" class=\"menu-bar-popup-title float-right
+        price\"> 0.00</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-currency\"
+        class=\"menu-bar-popup-title float-right price\"></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<p><strong>Free
+        shipping</strong> on print orders for US, UK, Europe and selected Asian countries</p>\n\t\t\t\t\t\t\t\t\t<form>\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\" class=\"button-link grey\">View
+        Cart</a>\n\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.packtpub.com/cart/checkout/?checkout_step=payment\"
+        class=\"button-link\">Check Out</a>\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"checkout-close\" onclick=\"Packt.headerMenu.hideMenuPopup()\"></div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-small\">\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t<div
+        class=\"small-popup-outer float-right\">\n\t\t\t\t\t\t\t\t<div class=\"small-popup-tick\">\n\t\t\t\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-text\">\n\t\t\t\t\t\t\t\t\t<strong>\n\t\t\t\t\t\t\t\t\t\tTitle
+        added to cart\n\t\t\t\t\t\t\t\t\t</strong>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-seperator\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-arrows\">\n&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t<div
+        id=\"menu-bar-popup-inner-bottom\" class=\"cf\"></div>\n\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t<div
+        id=\"main-container\" class=\"not-front logged-in page-node node-type-free-learning-page
+        no-sidebars page-packt-offers-free-learning section-packt node-full-view \">\n\t\t\t\t<div
+        id=\"main\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t <!--
+        #content -->\n\t\t\t\t\t \t<div id=\"content\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t
+        \t\t<div id=\"title-bar\" class=\"title-bar-red\" >\n\t\t\t\t\t\t \t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t\t \t\t\t\t<div id=\"title-bar-breadcrumb\">\n\t\t\t\t\t\t
+        \t\t\t\t\t<div class=\"breadcrumb\"><a href=\"/packt/offers/free-learning\"
+        class=\"active\">Free Learning</a></div>\t\t\t\t\t\t \t\t\t\t</div>\n\t\t\t\t\t\t\t
+        \t\t\t<div id=\"title-bar-title\"><h1>Free Learning</h1></div>\n\t\t\t\t\t\t\t
+        \t\t\t<div id=\"title-bar-right\"></div>\n\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t
+        \t\t</div>\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\n\t\t\t\t\t \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t\t
+        \t\t\t\t\t\t\t\t \t\t\t<div class=\"section-inner cf\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t
+        \t\t\t<div id=\"messages-container\">\n\t\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t
+        \t\t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t
+        \t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        name=\"main-content\" id=\"main-content\"></a>\n\t\t\t\t\t\t\t<div id=\"\">\n\t<div
+        id=\"free-learning-banner\" style=\";\">\n\t\t<img src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/FL-HeaderBanner.png\">\n\t</div>\n\t<div
+        class=\"section-outer white vpadding cf\">\n\t\t<div id=\"deal-of-the-day\"
+        class=\"cf\">\n\t\t\t<div class=\"dotd-main-book cf\">\n\t\t\t\t<div class=\"section-inner\">\n\t\t\t\t\t<div
+        class=\"dotd-main-book-image float-left\">\n\n\t\t\t\t\t\t<a href=\"/game-development/learning-iphone-game-development-cocos2d-30\">\n\t\t\t\t\t\t\t<noscript><img
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/dotd_main_image/0144OS_Cocos2D
+        3.0.jpg\" alt=\"\" title=\"\" class=\"bookimage imagecache imagecache-dotd_main_image\"
+        itemprop=\"url\"/></noscript><img src=\"/sites/default/files/blank.gif\" alt=\"\"
+        title=\"\" data-original=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/dotd_main_image/0144OS_Cocos2D
+        3.0.jpg\" class=\"bookimage imagecache imagecache-dotd_main_image\" itemprop=\"url\"/>\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"dotd-main-book-summary float-left\">\n\t\t\t\t\t\t<div class=\"eighteen-days-countdown-bar\">\n\t\t\t\t\t\t\tTime
+        is running out to claim this free ebook\n\t\t\t\t\t\t\t<span class=\"packt-js-countdown\"
+        data-countdown-to=\"1455667200\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"dotd-title\">\n\t\t\t\t\t\t\t<h2>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLearning
+        iPhone Game Development with Cocos2D 3.0\t\t\t\t\t\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br
+        />\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\tHarness the power of
+        Cocos2D to create your own stunning and engaging games for iOS\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<ul>\r\n<li>Find
+        practical solutions to many real-world game development problems</li>\r\n<li>Create
+        games from start to finish by writing code and following detailed step-by-step
+        instructions</li>\r\n<li>Full of illustrations and diagrams, practical examples,
+        and tips for deeper understanding of game development in Cocos2D for iPhone</li>\r\n</ul>\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-main-book-form cf\">\n\t\t\t\t\t\t\t<div class=\"dots-main-book-price
+        float-left\"></div>\n\t\t\t\t\t\t\t<div class=\"float-left free-ebook\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/freelearning-claim/16965/21478\" class=\"twelve-days-claim\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-claim-token-inner\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-claim-token-logo\"></div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-claim-token-separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"submit\" class=\"form-submit\" value=\"Claim Your Free eBook\" />\n\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div
+        class=\"section-outer grey vpadding cf\">\n\t\t<div id=\"free-learning-mobile-banner\"
+        \ style=\";\">\n\t\t\t<img src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/FL-HeaderBanner.png\">\n\t\t</div>\n\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/networking-and-servers/microsoft-exchange-server-2013-high-availability\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/1508EN_Microsoft.jpg\"
+        class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/1508EN_Microsoft.jpg\"
+        class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/web-development/getting-started-grunt-javascript-task-runner\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0628OS_Getting
+        Started.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0628OS_Getting
+        Started.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/hardware-and-creative/learning-cypher\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-3\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7758OS_Learning
+        Cypher.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7758OS_Learning
+        Cypher.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/continuous-delivery-and-devops-quickstart-guide\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3684EXP_DevOps
+        in a Flash_0.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3684EXP_DevOps
+        in a Flash_0.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/soa-made-simple\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-5\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/4163EN_Service
+        Oriented Architecture - SOA made Simple_cov.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/4163EN_Service
+        Oriented Architecture - SOA made Simple_cov.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/multithreading-c-50-cookbook\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2 book-block-position-3
+        book-block-position-6\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/7644OT.jpg\"
+        class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/7644OT.jpg\"
+        class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/virtualization-and-cloud/vmware-vsphere-5x-datacenter-design-cookbook\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7005EN_VMware
+        Cookbook.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7005EN_VMware
+        Cookbook.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/virtualization-and-cloud/learning-openshift\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0963OS_Learning
+        OpenShift_0.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0963OS_Learning
+        OpenShift_0.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/game-development/learning-iphone-game-development-cocos2d-30\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-3\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0144OS_Cocos2D
+        3.0.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0144OS_Cocos2D
+        3.0.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-5\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 17<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 18<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-3 book-block-position-4 book-block-position-6\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div
+        class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img class=\"fl-notavailable\"
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 19<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 20<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 21<sup>st</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-3 book-block-position-5\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 22<sup>nd</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 23<sup>rd</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 24<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-3 book-block-position-6\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div
+        class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img class=\"fl-notavailable\"
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 25<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 26<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-4 book-block-position-5\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 27<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-3\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 28<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 29<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t<div
+        class=\"fl-bottom-text-block\"><h3 style=\"text-align: center;\">Don't forget
+        to check back often - new titles are available every day!</h3></div>\n\t\t</div>\n\t</div>\n</div>\n\t\t\t\t\t
+        \t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<!-- /#content -->\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t<!--
+        #footer -->\n\t\t\t<div id=\"footer\" class=\"region region-footer\">\n\t\t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t<div class=\"footer-main-block\">\n\t\t\t\t\t\t<div
+        class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Contact Us</h2>\n\t\t\t\t\t\t\t<p>Get
+        in touch&nbsp;<a href=\"/books/info/packt/contact-us\">here</a>&nbsp;<span
+        style=\"font-family: Calibri, sans-serif; font-size: 11pt; line-height: 115%;\">if
+        you have any queries or issues.</span></p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block middle-footer-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Help
+        & Support</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Click&nbsp;<a href=\"/books/info/packt/faq\">here</a>&nbsp;for
+        FAQs, order information, T&amp;Cs, errata and code downloads.</p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Alerts
+        & Offers</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Sign up to our emails
+        for regular updates, bespoke offers, exclusive discounts and great free content.</p>\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-v3-subscribtion-dotd-form-1\">\n<div><div
+        class=\"form-item\">\n \n</div>\n<div class=\"form-item\" id=\"edit-mail-1-wrapper\">\n
+        <input type=\"text\" maxlength=\"128\" name=\"mail\" id=\"edit-mail-1\" size=\"60\"
+        value=\"\" placeholder=\"Enter your email address\" class=\"form-text\" />\n</div>\n<input
+        type=\"hidden\" name=\"newsletter_id\" id=\"edit-newsletter-id-1\" value=\"\"
+        \ />\n<input type=\"submit\" name=\"op\" id=\"edit-submit-4\" value=\"Submit\"
+        \ class=\" form-submit\" />\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-996b0f3de60ead1d319e7b31bbca5da5\" value=\"form-996b0f3de60ead1d319e7b31bbca5da5\"
+        \ />\n<input type=\"hidden\" name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token-1\"
+        value=\"7ca65e955b4b5df74415986852e286f1\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form-1\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer -->\n\n\t\t\t<!-- #footer-bottom -->\n\t\t\t<div id=\"footer-bottom\"
+        class=\"region region-footer-bottom\">\n\t\t\t\t<div class=\"section-inner
+        cf\">\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<div class=\"footer-bottom-block-left\">\n\t\t\t\t\t\t\t&copy;
+        Packt Publishing Limited.\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\tAll Rights
+        Reserved\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block
+        footer-contact-us\">\n\t\t\t\t\t\t<a href=\"/books/info/packt/contact-us\">Contact
+        Us</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\tView
+        our <a href=\"/books/info/packt/cookies\">Cookie Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-bottom-block\">\n\t\t\t\t\t\tOur <a href=\"/books/info/packt/privacy\">Privacy
+        Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<a
+        target=\"_blank\" href=\"http://www.linkedin.com/company/packt-publishing\"
+        class=\"footer-social linkedin\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://twitter.com/packtpub\"
+        class=\"footer-social twitter\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://www.facebook.com/packtpub\"
+        class=\"footer-social facebook\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://plus.google.com/112328881995125817822\"
+        class=\"footer-social gplus\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://www.youtube.com/user/packt1000\"
+        class=\"footer-social youtube\"></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer-bottom -->\n\t\t\t<script>\n\t\t\t(function (w,i,d,g,e,t,s)\n\t\t\t{w[d]
+        = w[d]||[];t= i.createElement(g); t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t,
+        s); }\n\t\t\t)(window, document, '_gscq','script','//widgets.getsitecontrol.com/18511/script.js');\n\t\t\t</script>\n\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t</div>\n\t\t<!--
+        /#page -->\n\t\t\n\t\t<div id=\"content-overlay\"></div>\n\t\t\n\t\t\t\t\n\t</body>\n</html>\n"}
+    headers:
+      age: ['18767']
+      cache-control: ['public, s-maxage=172800']
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Tue, 16 Feb 2016 21:32:37 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      server: [nginx/1.4.5]
+      via: [1.1 varnish]
+      x-country-code: [NL]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [SESS_live=jdis0fiudslfksldfji2342lkdjfldf]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: https://www.packtpub.com/packt/offers/free-learning/
+  response:
+    body: {string: "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        lang=\"en\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Free Learning | PACKT Books</title>\n\t\t<script>\n\t\t\tdataLayer
+        = [];\n\t\t</script>\n\t\t<script type=\"text/javascript\">\n\t\t\tvar GRANIFY_SITE_ID
+        = 1318;(function(e,t,n){var r,i,s,o,u;u=false;try{o=new RegExp(\"(?:^|\\\\W)_gr_test_url=([^;]*)\");s=document.cookie.match(o);if(s){if(s[1]===\"1\")u=true}else{r=Math.random();if(r>.95)u=true;i=new
+        Date(+(new Date)+1e3*60*60*24*2);document.cookie=\"_gr_test_url=\"+ +u+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}if(u)e.replace(\"javascript.js\",\"javascript.next.js\");try{o=new
+        RegExp(\"(?:^|\\\\W)_gr_ep=([^;]*)\");s=document.cookie.match(o);if(!s){document.cookie=\"_gr_ep_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";document.cookie=\"_gr_er_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";if(!window.location.origin){if(window.location.port)port=\":\"+window.location.port;else
+        port=\"\";window.location.origin=window.location.protocol+\"//\"+window.location.hostname+port}path=window.location.toString().replace(window.location.origin,\"\");referrer=document.referrer;i=new
+        Date(+(new Date)+1e3*60*30);document.cookie=\"_gr_ep=\"+path+\";expires=\"+i.toGMTString()+\";path=/\";document.cookie=\"_gr_er=\"+referrer+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}a=new
+        Date;a=\"\"+a.getUTCFullYear()+(a.getUTCMonth()+1)+a.getUTCDate();e=e+\"?id=\"+t+\"&v=\"+a;window.Granify=n;n._stack=[];n.init=function(e,t,r){function
+        i(e,t){e[t]=function(){Granify._stack.push([t].concat(Array.prototype.slice.call(arguments,0)))}}var
+        s=n;h=[\"on\",\"identify\",\"addTag\",\"trackPageView\",\"trackCart\",\"trackOrder\"];for(a=0;a<h.length;a++)i(s,h[a])};n.init();var
+        f,l,c,p=document.createElement(\"iframe\");p.src=\"javascript:false\";p.title=\"\";p.role=\"presentation\";(p.frameElement||p).style.cssText=\"width:
+        0 !important; height: 0 !important; border: 0 !important; overflow: hidden
+        !important; position: absolute !important; top: -1000px !important; left:
+        -1000px !important;\";c=document.getElementsByTagName(\"script\");c=c[c.length-1];c.parentNode.insertBefore(p,c);try{l=p.contentWindow.document}catch(a){f=document.domain;p.src=\"javascript:var
+        d=document.open();d.domain='\"+f+\"';void(0);\";l=p.contentWindow.document}l.open()._l=function(){var
+        t=this.createElement(\"script\");if(f)this.domain=f;t.id=\"js-iframe-async\";t.src=e;this.body.appendChild(t)};l.write('<body
+        onload=\"document._l();\">');l.close()})(\"//cdn.granify.com/assets/javascript.js\",GRANIFY_SITE_ID,[])\n\t\t</script>\n\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\tGranify.trackPageView({\n\t\t\t  page_type:
+        \"collection\"\n\t\t\t});\n\t\t</script>\n\t\t<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\n<link rel=\"shortcut icon\" href=\"//d1ldz4te4covpm.cloudfront.net/misc/favicon.ico\"
+        type=\"image/x-icon\" />\n<meta name=\"description\" content=\"A new free
+        programming tutorial book every day! Develop new tech skills and knowledge
+        with Packt Publishing\u2019s daily free learning giveaway.\" />\n<meta name=\"revisit-after\"
+        content=\"1 day\" />\n\t\t<link rel=\"canonical\" href=\"www.packtpub.com/packt/offers/free-learning\"
+        />\n\t\t\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\t\t<meta
+        id=\"viewport\" name=\"viewport\" content=\"width=320, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=0\">\n\t\t<!-- <link href=\"//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic\"
+        rel=\"stylesheet\" type=\"text/css\">-->\n\t\t <link href=\"/sites/all/themes/packt_v4/fonts/ubuntu.css\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t\t<!--[if lt IE 10]>\n\t\t\t<link
+        href=\"/sites/all/themes/packt_v4/css/core/packtpub_ie.css\" rel=\"stylesheet\"
+        type=\"text/css\">\n\t\t\t<![endif]-->\n\t\t\t<link type=\"text/css\" rel=\"stylesheet\"
+        media=\"all\" href=\"/sites/default/files/css/14531254790af9a780/6d76251933f115761f7b3782916f72ad.css\"
+        />\n<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"/sites/default/files/css/14531254790af9a780/6e295a6eb8f64cef4e07d9b1f02d46e8.css\"
+        />\n  \n\t\t\t<script type=\"text/javascript\" src=\"/sites/default/files/js/145312547998c14ffa/8420d359404024567b5aefda1231af24.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\njQuery.extend(Drupal.settings,
+        { \"basePath\": \"\\u002F\", \"dhtmlMenu\": [ \"doubleclick\", \"clone\" ]
+        });\n//--><!]]>\n</script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar
+        Packt = Packt || {}; Packt.user = {\"uid\":1917745,\"name\":\"John Doe\",\"mail\":\"test@example.com\",\"sid\":\"asdifu2iu420adsfjkasoferl34\",\"cart_id\":1917745,\"cart\":[],\"newsletters\":{\"60\":true,\"280\":true,\"281\":true,\"286\":true,\"287\":true,\"289\":true},\"country_code\":\"DE\",\"selected_currency\":\"EUR\",\"currency\":\"EUR\",\"currency_symbol\":\"\\u20ac\"};\n\t\t\t</script>\n\t\t\t<link
+        rel=\"alternate\" type=\"application/rss+xml\" href=\"/rss.xml\" title=\"Packt
+        Publishing News\" >\n\t\t\t<script>\n\t\t\t\t(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){\n\t\t\t\t\t(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\n\t\t\t\t\tm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n\t\t\t\t})(window,document,\"script\",\"//www.google-analytics.com/analytics.js\",\"ga\");\n\t\t\t\tga(\"create\",
+        \"UA-284627-1\", \"packtpub.com\", {\"siteSpeedSampleRate\": 100});\n\t\t\t\tga(\"require\",
+        \"displayfeatures\");\n\t\t\t\tga('require', 'ec');\n\t\t\t\tga(\"send\",
+        \"pageview\");\n\t\t\t\t\t\t\t\t//ga(\"require\", \"ecommerce\", \"ecommerce.js\");\n\n\t\t\t\t\n\t\t\t</script>\n\t</head>\n\t\n\t<body
+        id=\"ppv4\" class=\"with-logo\">\n\t\t<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-NJWZFW\"\n\t\t\theight=\"0\"
+        width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n\t\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\t\tnew
+        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\t\t})(window,document,'script','dataLayer','GTM-NJWZFW');Packt.dataLayer.init();</script>\n\n\t\t<div
+        id=\"page\" class=\"\" checkout=\"\">\n\t\t\t<div id=\"page-header\">\n\t\t\t\t\t\t\t<div
+        id=\"account-bar\" class=\"cf\">\n\t\t\t\t<div class=\"section-inner\">\n\t\t\t\t\t<div
+        id=\"account-bar-status\" class=\"cf\">\n\t\t\t\t\t\t<div id=\"account-bar-currency-selector\">\n\t\t\t\t\t\t\t<form
+        accept-charset=\"UTF-8\" method=\"post\" id=\"packt-currency-select-form\"
+        class=\"float-left\">\n\t\t\t\t\t\t\t\t<div class=\"form-item\" id=\"edit-currency-wrapper\">\n\t\t\t\t\t\t\t\t\t<select
+        name=\"currency\" class=\"form-select packt-currency-select-box selectBox\"
+        id=\"edit-currency\" style=\"display:none\">\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"GBP\" >GBP &#163;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"USD\"
+        >US &#36;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"EUR\" >EUR &#8364;</option>\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"AUD\" >AU &#36;</option>\n\t\t\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<input
+        type=\"submit\" name=\"op\" value=\"\" style=\"display: none;\" class=\"form-submit\">\t\t\t\n\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"form_id\" id=\"edit-packt-currency-select\" value=\"packt_currency_select_form\">\n\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t</div>\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\t\n\t\t\t\t\t\t<div id=\"account-bar-status-security\"></div>\n\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t<div
+        id=\"account-bar-login-register-ns\">\n\t\t\t\t\t\t\t\t<a href=\"/account\">My
+        Account</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t<div
+        id=\"account-bar-login-register\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"login-popup\"><div
+        class=\"float-left\">Log in</div></a>\n\t\t\t\t\t\t\t<div class=\"account-bar-divider
+        float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/register\"><div class=\"float-left\">Register</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-logged-in\">\n\t\t\t\t\t\t\t<a href=\"/account\">\n\t\t\t\t\t\t\t\t<div
+        class=\"float-left\"><strong>My Account</strong></div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/logout\"><div
+        class=\"float-left\">Sign out</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"account-bar-form\">\n\t\t\t\t\t\t<div id=\"account-bar-form-login\" class=\"cf\">\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-left\">\n\t\t\t\t\t\t\t\t<h4>Log in to your account</h4>\n\t\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-user-login-form\">\n<div><div
+        id=\"login-form\" class=\"cf\">\n\t<div id=\"login-form-email\">\n\t\t<div
+        class=\"form-item\" id=\"email-wrapper\">\n <input type=\"text\" maxlength=\"128\"
+        name=\"email\" id=\"email\" size=\"24\" value=\"\" placeholder=\"E-mail address\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-pass\">\n\t\t<div
+        class=\"form-item\" id=\"password-wrapper\">\n <input type=\"password\" name=\"password\"
+        id=\"password\"  maxlength=\"128\"  size=\"24\"  placeholder=\"Password\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-submit\">\n\t\t<input
+        type=\"submit\" name=\"op\" id=\"edit-submit-1\" value=\"Login\"  class=\"
+        form-submit\" />\n\t</div>\n\t<br />\n</div>\n<a href=\"https://www.packtpub.com/account/password\">Forgotten
+        your password?</a>\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-22edf3f7f0c2a8ea6525476c2afecfca\"
+        value=\"form-22edf3f7f0c2a8ea6525476c2afecfca\"  />\n\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-user-login-form-form-token\" value=\"822c548207b0405fcfebf49f28c5587c\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-user-login-form\"
+        value=\"packt_user_login_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div></form>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-right\">\n\t\t\t\t\t\t\t\t<h4>Not yet a member?</h4>\n\t\t\t\t\t\t\t\t<p>Register
+        for an account and access leading-edge content on emerging technologies.</p>\n\t\t\t\t\t\t\t\t<p><a
+        class=\"account-bar-toggle register\" href=\"/register\">Register now</a></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-form-close\"><a href=\"#\">Close</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar\">\n\t\t\t\t<div class=\"section-inner cf\">\n\t\t\t\t\t<div
+        id=\"menuIcon\"></div>\n\t\t\t\t\t<div id=\"menu-links\" class=\"\">\n\t\t\t\t\t\t<a
+        href=\"/\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text dummy\" id=\"menu-packt-logo\">\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Packt Logo</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/all\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-books\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Books
+        & Videos</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/blogs\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-blog\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Blog</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/info/packt/about\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-packt\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Packt</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/support\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-support\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Support</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        href=\"/packtlib\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab menu-item-tab
+        pl-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-text\" id=\"menu-packtlib\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-dark.png\"></span>\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text mob-pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-light.png\"></span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"menu-icons\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\"
+        id=\"menu-search\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"alt\">Search</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/collection\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-icon dummy\" id=\"menu-collection\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">My Collection</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab
+        last\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\" id=\"menu-cart\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"cart-icon-count\" class=\"cart-icon-count\"></div>\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Cart</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        id=\"menu-bar-popup\" class=\"cf\">\t\n\t\t\t\t<div id=\"menu-bar-popup-inner\"
+        class=\"cf\"></div>\t\n\t\t\t\t<div class=\"section-inner cf\">\t\n\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu threecol cf\" id=\"menu-books-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left threecol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Book & Video Categories</p>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"books-menu\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class='books-menu-column categories '><div class='inner'><p><a href=\"/web-development\">Web
+        Development</a></p><p><a href=\"/big-data-and-business-intelligence\">Big
+        Data & Business Intelligence</a></p><p><a href=\"/application-development\">Application
+        Development</a></p><p><a href=\"/virtualization-and-cloud\">Virtualization
+        & Cloud</a></p></div></div><div class='books-menu-column categories '><div
+        class='inner'><p><a href=\"/game-development\">Game Development</a></p><p><a
+        href=\"/networking-and-servers\">Networking & Servers</a></p><p><a href=\"/hardware-and-creative\">Hardware
+        & Creative</a></p><p><a href=\"/business\">Business</a></p></div></div><div
+        class='books-menu-column categories last'><div class='inner'><p><a href=\"/all\">All
+        Books</a></p><p><a href=\"/video\">All Videos</a></p><p><a href=\"/latest-releases\">Latest
+        Releases</a></p></div></div>\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right threecol\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right-inner cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"deal-of-the-day-banner\"
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-dotd-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/books/deal-of-the-day\">\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/bookretailers/9781783988969.jpg\"
+        alt=\"Mastering Python [Video]\" title=\"\" width=\"150\" height=\"185\" class=\"lazyload-disabled
+        imagecache imagecache-featured_book_block\"/>\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-dotd-percentage\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"menu-bar-dotd-percentage-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t80<sup
+        class=\"dotd-sup\">%</sup><div class=\"dotd-sub\">off</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-dotd-preview-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/deal-of-the-day\">Deal of the Day</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p>Get
+        to grips with Python best practices and advanced tools to design, distribute,
+        and test your programs</p>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf deal-of-the-day-in-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"dots-main-book-price
+        float-left\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-top-pricing-main-price\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-top-pricing-main-ebook-price  \">\u20AC19.36</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-rrp-price\">RRP \u20AC96.78</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<form
+        action=\"/add_to_cart/21152\"  accept-charset=\"UTF-8\" method=\"post\" id=\"packt-libraries-add-to-cart-form\"
+        class=\"packt-libraries-add-to-cart-form\">\n<div>\n<div class=\"book-top-addtocart-inner\">\t\n\t<div
+        class=\"book-top-addtocart-logo\"></div>\n\t<div class=\"book-top-addtocart-separator\"></div>\n\t\n\t<input
+        type=\"submit\" name=\"submit-21152\" id=\"submit-21152\" value=\"Add to Cart\"
+        \ class=\" form-submit\" />\n\t<input type=\"hidden\" name=\"nids\" id=\"nids\"
+        value=\"21152\"  />\n\n<input type=\"hidden\" name=\"qtys\" id=\"qtys\" value=\"1\"
+        \ />\n\n<input type=\"hidden\" name=\"upsell\" id=\"edit-upsell\" value=\"1\"
+        \ />\n\n\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-b683e052b974c0504714dc7acf9f58fc\"
+        value=\"form-b683e052b974c0504714dc7acf9f58fc\"  />\n\n<input type=\"hidden\"
+        name=\"form_id\" id=\"edit-packt-libraries-add-to-cart-form\" value=\"packt_libraries_add_to_cart_form\"
+        \ />\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf newsletter-signup-form\" newsletter_id=280>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-signup-text\"><strong>Sign up here to get these deals straight
+        to your inbox</strong></div> \n\t\t\t\t\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-v3-subscribtion-dotd-form\">\n<div><div class=\"form-item\">\n
+        \n</div>\n<div class=\"form-item\" id=\"edit-mail-wrapper\">\n <input type=\"text\"
+        maxlength=\"128\" name=\"mail\" id=\"edit-mail\" size=\"60\" value=\"\" placeholder=\"Enter
+        your email address\" class=\"form-text\" />\n</div>\n<input type=\"hidden\"
+        name=\"newsletter_id\" id=\"edit-newsletter-id\" value=\"\"  />\n<input type=\"submit\"
+        name=\"op\" id=\"edit-submit-3\" value=\"Submit\"  class=\" form-submit\"
+        />\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-44ff2d6bed31212e93816bbd8e204065\"
+        value=\"form-44ff2d6bed31212e93816bbd8e204065\"  />\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token\"
+        value=\"47599e6edb08db4fcb5f957043f55bda\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu twocol cf\" id=\"menu-blog-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Blog</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/content/blogs\">Blogs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/tech-hub\">Tech Hub</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/article-network\">Articles</a></p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/267_Cover
+        Image.png\" alt=\"Programming littleBits circuits with JavaScript Part 2\"
+        title=\"\" width=\"240\" height=\"114\" class=\"lazyload-disabled imagecache
+        imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/programming-littlebits-circuits-javascript-part-2\">Programming
+        littleBits circuits with JavaScript Part 2</a></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-article-one-liner\">In Part 2 you are able to read data from
+        the littleBits input modules and use these values to trigger changes to the
+        servo and bargraph.</p>\n\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/content/blogs\">Read
+        all our blogs</a></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packt-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Packt Publishing</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/about\">About
+        Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/authors\">Our
+        Authors</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/trade-partners\">Trade
+        & Partners</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a href=\"/blog-network\">Blog</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/techprimer-network\">Technology Primers</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/contact-us\">Contact Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/careers-with-packt\">Careers</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a
+        href=\"/article-network\">Articles</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<!--<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/267_Cover
+        Image.png\" alt=\"Programming littleBits circuits with JavaScript Part 2\"
+        title=\"\" width=\"240\" height=\"114\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/></noscript><img
+        src=\"/sites/default/files/blank.gif\" alt=\"Programming littleBits circuits
+        with JavaScript Part 2\" title=\"\" width=\"240\" height=\"114\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/267_Cover
+        Image.png\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/programming-littlebits-circuits-javascript-part-2\">Programming
+        littleBits circuits with JavaScript Part 2</a></p>\n\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-article-one-liner\"></p>\n\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/articles\">Read all our articles</a></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>-->\n\t\t\t\t\t</div>\n\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-support-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Support</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/faq\">FAQs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/ordering\">Ordering Information</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/terms-and-conditions\">Terms & Conditions</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/support\">Code Downloads & Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/errata\">Submit Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packtlib-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">PacktLib</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/subscription/packtlib\">Subscribe</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/subscription/packtlib-business\">PacktLib For Business</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/packtlib\">Take me to the Library</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-search-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-search-inner\">\n\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-libraries-main-search-form\">\n<div>\n<div id=\"menu-bar-search\"
+        class=\"cf\">\n\t<div id=\"menu-bar-search-title\">\n\t\t<div class=\"form-item\">Search</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-box\">\n\t\t<div class=\"form-item\" id=\"main-search-keys-wrapper\">\n
+        <input type=\"text\" name=\"keys\" id=\"main-search-keys\" size=\"49\" value=\"\"
+        placeholder=\"Enter your search terms...\" class=\"form-text\" />\n</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-button\">\n\t\t<input type=\"submit\" name=\"op\" id=\"edit-submit-5\"
+        value=\"Search\"  class=\" form-submit\" />\n\t</div>\n\t<input type=\"hidden\"
+        name=\"sort\" id=\"edit-sort\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"types\"
+        id=\"edit-types\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"forthcoming\"
+        id=\"edit-forthcoming\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"available\"
+        id=\"edit-available\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"count\"
+        id=\"edit-count\" value=\"20\"  />\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-de1c7f96896c87d9e58e64fe7e49af98\" value=\"form-de1c7f96896c87d9e58e64fe7e49af98\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-libraries-main-search-form\"
+        value=\"packt_libraries_main_search_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n</div>\n<div
+        class=\"facet-search-cross facet-search-cross-autocomplete\"></div>\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-preview\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-popup-cart-item-preview\">\n\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-item-preview-image\">\n\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"\" />\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Added
+        to Cart</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-cart-item-preview-title\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-oneliner\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-additional\">...and <span></span> more</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        class=\"price\"><span id=\"menu-bar-popup-cart-item-preview-currency\"></span><span
+        id=\"menu-bar-popup-cart-item-preview-price\"></span></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-empty-preview\">\n\t\t\t\t\t\t\t\t\tYou don't have
+        anything in your cart right now.\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-content\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-title\"
+        class=\"menu-bar-popup-title float-left\">Subtotal</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-subtotal-value\" class=\"menu-bar-popup-title float-right
+        price\"> 0.00</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-currency\"
+        class=\"menu-bar-popup-title float-right price\"></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<p><strong>Free
+        shipping</strong> on print orders for US, UK, Europe and selected Asian countries</p>\n\t\t\t\t\t\t\t\t\t<form>\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\" class=\"button-link grey\">View
+        Cart</a>\n\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.packtpub.com/cart/checkout/?checkout_step=payment\"
+        class=\"button-link\">Check Out</a>\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"checkout-close\" onclick=\"Packt.headerMenu.hideMenuPopup()\"></div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-small\">\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t<div
+        class=\"small-popup-outer float-right\">\n\t\t\t\t\t\t\t\t<div class=\"small-popup-tick\">\n\t\t\t\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-text\">\n\t\t\t\t\t\t\t\t\t<strong>\n\t\t\t\t\t\t\t\t\t\tTitle
+        added to cart\n\t\t\t\t\t\t\t\t\t</strong>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-seperator\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-arrows\">\n&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t<div
+        id=\"menu-bar-popup-inner-bottom\" class=\"cf\"></div>\n\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t<div
+        id=\"main-container\" class=\"not-front logged-in page-node node-type-free-learning-page
+        no-sidebars page-packt-offers-free-learning section-packt node-full-view \">\n\t\t\t\t<div
+        id=\"main\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t <!--
+        #content -->\n\t\t\t\t\t \t<div id=\"content\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t
+        \t\t<div id=\"title-bar\" class=\"title-bar-red\" >\n\t\t\t\t\t\t \t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t\t \t\t\t\t<div id=\"title-bar-breadcrumb\">\n\t\t\t\t\t\t
+        \t\t\t\t\t<div class=\"breadcrumb\"><a href=\"/packt/offers/free-learning\"
+        class=\"active\">Free Learning</a></div>\t\t\t\t\t\t \t\t\t\t</div>\n\t\t\t\t\t\t\t
+        \t\t\t<div id=\"title-bar-title\"><h1>Free Learning</h1></div>\n\t\t\t\t\t\t\t
+        \t\t\t<div id=\"title-bar-right\"></div>\n\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t
+        \t\t</div>\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\n\t\t\t\t\t \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t\t
+        \t\t\t\t\t\t\t\t \t\t\t<div class=\"section-inner cf\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t
+        \t\t\t<div id=\"messages-container\">\n\t\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t
+        \t\t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t
+        \t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        name=\"main-content\" id=\"main-content\"></a>\n\t\t\t\t\t\t\t<div id=\"\">\n\t<div
+        id=\"free-learning-banner\">\n\t\t<img src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/FL-HeaderBanner.png\">\n\t</div>\n\t<div
+        class=\"section-outer white vpadding cf\">\n\t\t<div id=\"deal-of-the-day\"
+        class=\"cf\">\n\t\t\t<div class=\"dotd-main-book cf\">\n\t\t\t\t<div class=\"section-inner\">\n\t\t\t\t\t<div
+        class=\"dotd-main-book-image float-left\">\n\n\t\t\t\t\t\t<a href=\"/application-development/multithreading-c-50-cookbook\">\n\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/dotd_main_image/7644OT.jpg\"
+        alt=\"\" title=\"\" class=\"bookimage imagecache imagecache-dotd_main_image\"
+        itemprop=\"url\"/></noscript><img src=\"/sites/default/files/blank.gif\" alt=\"\"
+        title=\"\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/dotd_main_image/7644OT.jpg\"
+        class=\"bookimage imagecache imagecache-dotd_main_image\" itemprop=\"url\"/>\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"dotd-main-book-summary float-left\">\n\t\t\t\t\t\t<div class=\"eighteen-days-countdown-bar\">\n\t\t\t\t\t\t\tTime
+        is running out to claim this free ebook\n\t\t\t\t\t\t\t<span class=\"packt-js-countdown\"
+        data-countdown-to=\"1455408000\"></span>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"dotd-title\">\n\t\t\t\t\t\t\t<h2>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMultithreading
+        in C# 5.0 Cookbook\t\t\t\t\t\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<br
+        />\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\tIf you are a developer
+        or new to multithreaded programming and you are looking for a quick and easy
+        way to get started, then this book is for you. Multithreading in C# 5.0 Cookbook
+        is an easy-to-understand guide to the most puzzling programming problems.
+        This book will guide you through practical examples dedicated to various aspects
+        of multithreading in C# on Windows and will give you a good basis of practical
+        knowledge which you can then use to program your own scalable and reliable
+        multithreaded applications.\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-main-book-form cf\">\n\t\t\t\t\t\t\t<div class=\"dots-main-book-price
+        float-left\"></div>\n\t\t\t\t\t\t\t<div class=\"float-left free-ebook\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/freelearning-claim/12544/21478\" class=\"twelve-days-claim\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-claim-token-inner\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-claim-token-logo\"></div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-claim-token-separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t<input
+        type=\"submit\" class=\"form-submit\" value=\"Claim Your Free eBook\" />\n\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div
+        class=\"section-outer grey vpadding cf\">\n\t\t<div id=\"free-learning-mobile-banner\">\n\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/FL-HeaderBanner.png\">\n\t\t</div>\n\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/networking-and-servers/microsoft-exchange-server-2013-high-availability\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/1508EN_Microsoft.jpg\"
+        class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/1508EN_Microsoft.jpg\"
+        class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/web-development/getting-started-grunt-javascript-task-runner\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0628OS_Getting
+        Started.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/0628OS_Getting
+        Started.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/hardware-and-creative/learning-cypher\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-3\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7758OS_Learning
+        Cypher.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/7758OS_Learning
+        Cypher.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/continuous-delivery-and-devops-quickstart-guide\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3684EXP_DevOps
+        in a Flash_0.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3684EXP_DevOps
+        in a Flash_0.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/soa-made-simple\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-5\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/4163EN_Service
+        Oriented Architecture - SOA made Simple_cov.jpg\" class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/4163EN_Service
+        Oriented Architecture - SOA made Simple_cov.jpg\" class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/application-development/multithreading-c-50-cookbook\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-block-outer  book-block-position-1 book-block-position-2 book-block-position-3
+        book-block-position-6\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t\t\t<img
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/7644OT.jpg\"
+        class=\"bookimage \"  />\n\t\t\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t\t\t<img
+        src=\"/sites/default/files/blank.gif\" data-original=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/7644OT.jpg\"
+        class=\"bookimage \" />\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 14<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 15<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-3\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 16<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-5\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 17<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 18<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-3 book-block-position-4 book-block-position-6\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div
+        class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img class=\"fl-notavailable\"
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 19<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 20<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 21<sup>st</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-3 book-block-position-5\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 22<sup>nd</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-4\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 23<sup>rd</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 24<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-3 book-block-position-6\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block fl-last  fl \">\n\t\t\t\t\t\t\t\t<div
+        class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img class=\"fl-notavailable\"
+        src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 25<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 26<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2 book-block-position-4 book-block-position-5\">\n\t\t\t\t\t\t\t<div
+        class=\"book-block-container book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 27<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-3\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 28<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-block-outer  book-block-position-1
+        book-block-position-2\">\n\t\t\t\t\t\t\t<div class=\"book-block-container
+        book-block  fl \">\n\t\t\t\t\t\t\t\t<div class=\"present-container\">\n\t\t\t\t\t\t\t\t\t<img
+        class=\"fl-notavailable\" src=\"//d1ldz4te4covpm.cloudfront.net/sites/default/files/FL-TileBacking.png\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fl-notavailable-text\">Feb 29<sup>th</sup></div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t<div
+        class=\"fl-bottom-text-block\"><h3 style=\"text-align: center;\">Don't forget
+        to check back often - new titles are available every day!</h3></div>\n\t\t</div>\n\t</div>\n</div>\n\t\t\t\t\t
+        \t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<!-- /#content -->\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t<!--
+        #footer -->\n\t\t\t<div id=\"footer\" class=\"region region-footer\">\n\t\t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t<div class=\"footer-main-block\">\n\t\t\t\t\t\t<div
+        class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Contact Us</h2>\n\t\t\t\t\t\t\t<p>Get
+        in touch&nbsp;<a href=\"/books/info/packt/contact-us\">here</a>&nbsp;<span
+        style=\"font-family: Calibri, sans-serif; font-size: 11pt; line-height: 115%;\">if
+        you have any queries or issues.</span></p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block middle-footer-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Help
+        & Support</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Click&nbsp;<a href=\"/books/info/packt/faq\">here</a>&nbsp;for
+        FAQs, order information, T&amp;Cs, errata and code downloads.</p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Alerts
+        & Offers</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Sign up to our emails
+        for regular updates, bespoke offers, exclusive discounts and great free content.</p>\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-v3-subscribtion-dotd-form-1\">\n<div><div
+        class=\"form-item\">\n \n</div>\n<div class=\"form-item\" id=\"edit-mail-1-wrapper\">\n
+        <input type=\"text\" maxlength=\"128\" name=\"mail\" id=\"edit-mail-1\" size=\"60\"
+        value=\"\" placeholder=\"Enter your email address\" class=\"form-text\" />\n</div>\n<input
+        type=\"hidden\" name=\"newsletter_id\" id=\"edit-newsletter-id-1\" value=\"\"
+        \ />\n<input type=\"submit\" name=\"op\" id=\"edit-submit-4\" value=\"Submit\"
+        \ class=\" form-submit\" />\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-5e75f2bf2931fceaf7a851e34fdf834b\" value=\"form-5e75f2bf2931fceaf7a851e34fdf834b\"
+        \ />\n<input type=\"hidden\" name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token-1\"
+        value=\"5c406a5bd017deb40531e29146222aad\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form-1\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer -->\n\n\t\t\t<!-- #footer-bottom -->\n\t\t\t<div id=\"footer-bottom\"
+        class=\"region region-footer-bottom\">\n\t\t\t\t<div class=\"section-inner
+        cf\">\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<div class=\"footer-bottom-block-left\">\n\t\t\t\t\t\t\t&copy;
+        Packt Publishing Limited.\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\tAll Rights
+        Reserved\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block
+        footer-contact-us\">\n\t\t\t\t\t\t<a href=\"/books/info/packt/contact-us\">Contact
+        Us</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\tView
+        our <a href=\"/books/info/packt/cookies\">Cookie Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-bottom-block\">\n\t\t\t\t\t\tOur <a href=\"/books/info/packt/privacy\">Privacy
+        Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<a
+        target=\"_blank\" href=\"http://www.linkedin.com/company/packt-publishing\"
+        class=\"footer-social linkedin\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://twitter.com/packtpub\"
+        class=\"footer-social twitter\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://www.facebook.com/packtpub\"
+        class=\"footer-social facebook\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://plus.google.com/112328881995125817822\"
+        class=\"footer-social gplus\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://www.youtube.com/user/packt1000\"
+        class=\"footer-social youtube\"></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer-bottom -->\n\t\t\t<script>\n\t\t\t(function (w,i,d,g,e,t,s)\n\t\t\t{w[d]
+        = w[d]||[];t= i.createElement(g); t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t,
+        s); }\n\t\t\t)(window, document, '_gscq','script','//widgets.getsitecontrol.com/18511/script.js');\n\t\t\t</script>\n\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t</div>\n\t\t<!--
+        /#page -->\n\t\t\n\t\t<div id=\"content-overlay\"></div>\n\t\t\n\t\t\t\t\n\t</body>\n</html>\n"}
+    headers:
+      age: ['14454']
+      cache-control: ['public, s-maxage=172800']
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Tue, 16 Feb 2016 21:32:38 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      server: [nginx/1.4.5]
+      via: [1.1 varnish]
+      x-country-code: [NL]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [SESS_live=jdis0fiudslfksldfji2342lkdjfldf]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: https://www.packtpub.com/freelearning-claim/12544/21478
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      accept-ranges: [bytes]
+      age: ['0']
+      cache-control: ['store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-length: ['0']
+      content-type: [text/html; charset=utf-8]
+      date: ['Tue, 16 Feb 2016 21:32:39 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      location: ['https://www.packtpub.com/account/my-ebooks']
+      server: [nginx/1.4.5]
+      via: [1.1 varnish]
+      x-country-code: [NL]
+    status: {code: 302, message: Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [SESS_live=jdis0fiudslfksldfji2342lkdjfldf]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: https://www.packtpub.com/account/my-ebooks
+  response:
+    body: {string: "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        lang=\"en\" xml:lang=\"en\">\n\t<head>\n\t\t<title>Packt Publishing | Technology
+        Books, eBooks & Videos</title>\n\t\t<script>\n\t\t\tdataLayer = [];\n\t\t</script>\n\t\t<script
+        type=\"text/javascript\">\n\t\t\tvar GRANIFY_SITE_ID = 1318;(function(e,t,n){var
+        r,i,s,o,u;u=false;try{o=new RegExp(\"(?:^|\\\\W)_gr_test_url=([^;]*)\");s=document.cookie.match(o);if(s){if(s[1]===\"1\")u=true}else{r=Math.random();if(r>.95)u=true;i=new
+        Date(+(new Date)+1e3*60*60*24*2);document.cookie=\"_gr_test_url=\"+ +u+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}if(u)e.replace(\"javascript.js\",\"javascript.next.js\");try{o=new
+        RegExp(\"(?:^|\\\\W)_gr_ep=([^;]*)\");s=document.cookie.match(o);if(!s){document.cookie=\"_gr_ep_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";document.cookie=\"_gr_er_sent=;expires=Thu,
+        01-Jan-1970 00:00:01 GMT;path=/\";if(!window.location.origin){if(window.location.port)port=\":\"+window.location.port;else
+        port=\"\";window.location.origin=window.location.protocol+\"//\"+window.location.hostname+port}path=window.location.toString().replace(window.location.origin,\"\");referrer=document.referrer;i=new
+        Date(+(new Date)+1e3*60*30);document.cookie=\"_gr_ep=\"+path+\";expires=\"+i.toGMTString()+\";path=/\";document.cookie=\"_gr_er=\"+referrer+\";expires=\"+i.toGMTString()+\";path=/\"}}catch(a){}a=new
+        Date;a=\"\"+a.getUTCFullYear()+(a.getUTCMonth()+1)+a.getUTCDate();e=e+\"?id=\"+t+\"&v=\"+a;window.Granify=n;n._stack=[];n.init=function(e,t,r){function
+        i(e,t){e[t]=function(){Granify._stack.push([t].concat(Array.prototype.slice.call(arguments,0)))}}var
+        s=n;h=[\"on\",\"identify\",\"addTag\",\"trackPageView\",\"trackCart\",\"trackOrder\"];for(a=0;a<h.length;a++)i(s,h[a])};n.init();var
+        f,l,c,p=document.createElement(\"iframe\");p.src=\"javascript:false\";p.title=\"\";p.role=\"presentation\";(p.frameElement||p).style.cssText=\"width:
+        0 !important; height: 0 !important; border: 0 !important; overflow: hidden
+        !important; position: absolute !important; top: -1000px !important; left:
+        -1000px !important;\";c=document.getElementsByTagName(\"script\");c=c[c.length-1];c.parentNode.insertBefore(p,c);try{l=p.contentWindow.document}catch(a){f=document.domain;p.src=\"javascript:var
+        d=document.open();d.domain='\"+f+\"';void(0);\";l=p.contentWindow.document}l.open()._l=function(){var
+        t=this.createElement(\"script\");if(f)this.domain=f;t.id=\"js-iframe-async\";t.src=e;this.body.appendChild(t)};l.write('<body
+        onload=\"document._l();\">');l.close()})(\"//cdn.granify.com/assets/javascript.js\",GRANIFY_SITE_ID,[])\n\t\t</script>\n\t\t\t\t<script
+        type=\"text/javascript\">\n\t\t\tGranify.trackPageView({\n\t\t\t  page_type:
+        \"other\"\n\t\t\t});\n\t\t</script>\n\t\t<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\n<link rel=\"shortcut icon\" href=\"//d1ldz4te4covpm.cloudfront.net/misc/favicon.ico\"
+        type=\"image/x-icon\" />\n<meta name=\"description\" content=\"Packt Publishing
+        provides technology eBooks, books and videos to help IT Developers and Administrators
+        to put software and tools to work in new ways.\" />\n<meta name=\"revisit-after\"
+        content=\"1 day\" />\n\t\t<link rel=\"canonical\" href=\"www.packtpub.com/account/my-ebooks\"
+        />\n\t\t\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\t\t<meta
+        id=\"viewport\" name=\"viewport\" content=\"width=320, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=0\">\n\t\t<!-- <link href=\"//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic\"
+        rel=\"stylesheet\" type=\"text/css\">-->\n\t\t <link href=\"/sites/all/themes/packt_v4/fonts/ubuntu.css\"
+        rel=\"stylesheet\" type=\"text/css\">\n\t\t<!--[if lt IE 10]>\n\t\t\t<link
+        href=\"/sites/all/themes/packt_v4/css/core/packtpub_ie.css\" rel=\"stylesheet\"
+        type=\"text/css\">\n\t\t\t<![endif]-->\n\t\t\t<link type=\"text/css\" rel=\"stylesheet\"
+        media=\"all\" href=\"/sites/default/files/css/1455547277792afdf4/78f9098398df991675d32855ba33c2b5.css\"
+        />\n<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"/sites/default/files/css/1455547277792afdf4/6e295a6eb8f64cef4e07d9b1f02d46e8.css\"
+        />\n  \n\t\t\t<script type=\"text/javascript\" src=\"/sites/default/files/js/1455547277c262a2e7/a3788c8c64fd65c470e23e7534c3ebc8.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\njQuery.extend(Drupal.settings,
+        { \"basePath\": \"\\u002F\", \"dhtmlMenu\": [ \"doubleclick\", \"clone\" ]
+        });\n//--><!]]>\n</script>\n\t\t\t<script type=\"text/javascript\">\n\t\t\t\tvar
+        Packt = Packt || {}; Packt.user = {\"uid\":1917745,\"name\":\"John Doe\",\"mail\":\"user@example.com\",\"sid\":\"jdis0fiudslfksldfji2342lkdjfldf\",\"cart_id\":1917745,\"cart\":[],\"newsletters\":{\"60\":true,\"280\":true,\"281\":true,\"286\":true,\"287\":true,\"289\":true},\"country_code\":\"DE\",\"selected_currency\":\"EUR\",\"currency\":\"EUR\",\"currency_symbol\":\"\\u20ac\"};\n\t\t\t</script>\n\t\t\t<link
+        rel=\"alternate\" type=\"application/rss+xml\" href=\"/rss.xml\" title=\"Packt
+        Publishing News\" >\n\t\t\t<script>\n\t\t\t\t(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){\n\t\t\t\t\t(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\n\t\t\t\t\tm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n\t\t\t\t})(window,document,\"script\",\"//www.google-analytics.com/analytics.js\",\"ga\");\n\t\t\t\tga(\"create\",
+        \"UA-284627-1\", \"packtpub.com\", {\"siteSpeedSampleRate\": 100});\n\t\t\t\tga(\"require\",
+        \"displayfeatures\");\n\t\t\t\tga('require', 'ec');\n\t\t\t\tga(\"send\",
+        \"pageview\");\n\t\t\t\t\t\t\t\t//ga(\"require\", \"ecommerce\", \"ecommerce.js\");\n\n\t\t\t\t\n\t\t\t</script>\n\t</head>\n\t\n\t<body
+        id=\"ppv4\" class=\"with-logo\">\n\t\t<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-NJWZFW\"\n\t\t\theight=\"0\"
+        width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n\t\t\t<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n\t\t\t\tnew
+        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n\t\t\tj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n\t\t\t'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n\t\t})(window,document,'script','dataLayer','GTM-NJWZFW');Packt.dataLayer.init();</script>\n\n\t\t<div
+        id=\"page\" class=\"\" checkout=\"\">\n\t\t\t<div id=\"page-header\">\n\t\t\t\t\t\t\t<div
+        id=\"account-bar\" class=\"cf\">\n\t\t\t\t<div class=\"section-inner\">\n\t\t\t\t\t<div
+        id=\"account-bar-status\" class=\"cf\">\n\t\t\t\t\t\t<div id=\"account-bar-currency-selector\">\n\t\t\t\t\t\t\t<form
+        accept-charset=\"UTF-8\" method=\"post\" id=\"packt-currency-select-form\"
+        class=\"float-left\">\n\t\t\t\t\t\t\t\t<div class=\"form-item\" id=\"edit-currency-wrapper\">\n\t\t\t\t\t\t\t\t\t<select
+        name=\"currency\" class=\"form-select packt-currency-select-box selectBox\"
+        id=\"edit-currency\" style=\"display:none\">\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"GBP\" >GBP &#163;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"USD\"
+        >US &#36;</option>\n\t\t\t\t\t\t\t\t\t\t<option value=\"EUR\" >EUR &#8364;</option>\n\t\t\t\t\t\t\t\t\t\t<option
+        value=\"AUD\" >AU &#36;</option>\n\t\t\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<input
+        type=\"submit\" name=\"op\" value=\"\" style=\"display: none;\" class=\"form-submit\">\t\t\t\n\t\t\t\t\t\t\t\t<input
+        type=\"hidden\" name=\"form_id\" id=\"edit-packt-currency-select\" value=\"packt_currency_select_form\">\n\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t</div>\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\t\n\t\t\t\t\t\t<div id=\"account-bar-status-security\"></div>\n\t\t\t\t\t\t<noscript>\n\t\t\t\t\t\t\t<div
+        id=\"account-bar-login-register-ns\">\n\t\t\t\t\t\t\t\t<a href=\"/account\">My
+        Account</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</noscript>\n\t\t\t\t\t\t<div
+        id=\"account-bar-login-register\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"login-popup\"><div
+        class=\"float-left\">Log in</div></a>\n\t\t\t\t\t\t\t<div class=\"account-bar-divider
+        float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/register\"><div class=\"float-left\">Register</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-logged-in\">\n\t\t\t\t\t\t\t<a href=\"/account\">\n\t\t\t\t\t\t\t\t<div
+        class=\"float-left\"><strong>My Account</strong></div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-divider float-left\">|</div>\t\n\t\t\t\t\t\t\t<a href=\"/logout\"><div
+        class=\"float-left\">Sign out</div></a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"account-bar-form\">\n\t\t\t\t\t\t<div id=\"account-bar-form-login\" class=\"cf\">\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-left\">\n\t\t\t\t\t\t\t\t<h4>Log in to your account</h4>\n\t\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-user-login-form\">\n<div><div
+        id=\"login-form\" class=\"cf\">\n\t<div id=\"login-form-email\">\n\t\t<div
+        class=\"form-item\" id=\"email-wrapper\">\n <input type=\"text\" maxlength=\"128\"
+        name=\"email\" id=\"email\" size=\"24\" value=\"\" placeholder=\"E-mail address\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-pass\">\n\t\t<div
+        class=\"form-item\" id=\"password-wrapper\">\n <input type=\"password\" name=\"password\"
+        id=\"password\"  maxlength=\"128\"  size=\"24\"  placeholder=\"Password\"
+        class=\"form-text required\" />\n</div>\n\t</div>\n\t<div id=\"login-form-submit\">\n\t\t<input
+        type=\"submit\" name=\"op\" id=\"edit-submit-3\" value=\"Login\"  class=\"
+        form-submit\" />\n\t</div>\n\t<br />\n</div>\n<a href=\"https://www.packtpub.com/account/password\">Forgotten
+        your password?</a>\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-091871438fe53c7ed7386dc3be08843c\"
+        value=\"form-091871438fe53c7ed7386dc3be08843c\"  />\n\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-user-login-form-form-token\" value=\"a8786c4311eb823206c018f168690d47\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-user-login-form\"
+        value=\"packt_user_login_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div></form>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"account-bar-form-right\">\n\t\t\t\t\t\t\t\t<h4>Not yet a member?</h4>\n\t\t\t\t\t\t\t\t<p>Register
+        for an account and access leading-edge content on emerging technologies.</p>\n\t\t\t\t\t\t\t\t<p><a
+        class=\"account-bar-toggle register\" href=\"/register\">Register now</a></p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        id=\"account-bar-form-close\"><a href=\"#\">Close</a></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar\">\n\t\t\t\t<div class=\"section-inner cf\">\n\t\t\t\t\t<div
+        id=\"menuIcon\"></div>\n\t\t\t\t\t<div id=\"menu-links\" class=\"\">\n\t\t\t\t\t\t<a
+        href=\"/\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text dummy\" id=\"menu-packt-logo\">\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Packt Logo</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/all\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-books\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Books
+        & Videos</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/blogs\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-blog\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Blog</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/info/packt/about\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-packt\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Packt</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/books/content/support\">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-text\" id=\"menu-support\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"menu-text\">Support</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        href=\"/packtlib\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab menu-item-tab
+        pl-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-text\" id=\"menu-packtlib\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-dark.png\"></span>\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"menu-text mob-pl\"><img id=\"pl-img\" src=\"//dz13w8afd47il.cloudfront.net/sites/all/themes/packt_v4/images/packtlib-logo-light.png\"></span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        id=\"menu-icons\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">\n\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\"
+        id=\"menu-search\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"alt\">Search</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<a
+        href=\"/collection\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-tab\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-item-icon dummy\" id=\"menu-collection\">\n\t\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">My Collection</span>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\">\n\t\t\t\t\t\t\t<div class=\"menu-item-tab
+        last\">\n\t\t\t\t\t\t\t\t<div class=\"menu-item-icon\" id=\"menu-cart\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"cart-icon-count\" class=\"cart-icon-count\"></div>\n\t\t\t\t\t\t\t\t\t<span
+        class=\"alt\">Cart</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div
+        id=\"menu-bar-popup\" class=\"cf\">\t\n\t\t\t\t<div id=\"menu-bar-popup-inner\"
+        class=\"cf\"></div>\t\n\t\t\t\t<div class=\"section-inner cf\">\t\n\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu threecol cf\" id=\"menu-books-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left threecol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Book & Video Categories</p>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"books-menu\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class='books-menu-column categories '><div class='inner'><p><a href=\"/web-development\">Web
+        Development</a></p><p><a href=\"/big-data-and-business-intelligence\">Big
+        Data & Business Intelligence</a></p><p><a href=\"/application-development\">Application
+        Development</a></p><p><a href=\"/virtualization-and-cloud\">Virtualization
+        & Cloud</a></p></div></div><div class='books-menu-column categories '><div
+        class='inner'><p><a href=\"/game-development\">Game Development</a></p><p><a
+        href=\"/networking-and-servers\">Networking & Servers</a></p><p><a href=\"/hardware-and-creative\">Hardware
+        & Creative</a></p><p><a href=\"/business\">Business</a></p></div></div><div
+        class='books-menu-column categories last'><div class='inner'><p><a href=\"/all\">All
+        Books</a></p><p><a href=\"/video\">All Videos</a></p><p><a href=\"/latest-releases\">Latest
+        Releases</a></p></div></div>\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right threecol\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right-inner cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"deal-of-the-day-banner\"
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-dotd-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/books/deal-of-the-day\">\n\t\t\t\t\t\t\t\t\t\t\t\t<img src=\"//d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/featured_book_block/3758OS_4829_Python
+        GUI Programming Cookbook_0.jpg\" alt=\"Python GUI Programming Cookbook\" title=\"\"
+        width=\"150\" height=\"185\" class=\"lazyload-disabled imagecache imagecache-featured_book_block\"/>\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"menu-bar-dotd-percentage\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"menu-bar-dotd-percentage-text\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t50<sup
+        class=\"dotd-sup\">%</sup><div class=\"dotd-sub\">off</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-dotd-preview-text\">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/deal-of-the-day\">Deal of the Day</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p>Over
+        80 object-oriented recipes to help you create mind-blowing GUIs in Python</p>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf deal-of-the-day-in-header\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"dots-main-book-price
+        float-left\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"book-top-pricing-main-price\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"book-top-pricing-main-ebook-price  \">\u20AC19.63</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-rrp-price\">RRP \u20AC39.25</div>\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t<form
+        action=\"/add_to_cart/22857\"  accept-charset=\"UTF-8\" method=\"post\" id=\"packt-libraries-add-to-cart-form\"
+        class=\"packt-libraries-add-to-cart-form\">\n<div>\n<div class=\"book-top-addtocart-inner\">\t\n\t<div
+        class=\"book-top-addtocart-logo\"></div>\n\t<div class=\"book-top-addtocart-separator\"></div>\n\t\n\t<input
+        type=\"submit\" name=\"submit-22857\" id=\"submit-22857\" value=\"Add to Cart\"
+        \ class=\" form-submit\" />\n\t<input type=\"hidden\" name=\"nids\" id=\"nids\"
+        value=\"22857\"  />\n\n<input type=\"hidden\" name=\"qtys\" id=\"qtys\" value=\"1\"
+        \ />\n\n<input type=\"hidden\" name=\"upsell\" id=\"edit-upsell-2\" value=\"1\"
+        \ />\n\n\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-f3e0af0cfefcc957720d33ff92cb60da\"
+        value=\"form-f3e0af0cfefcc957720d33ff92cb60da\"  />\n\n<input type=\"hidden\"
+        name=\"form_id\" id=\"edit-packt-libraries-add-to-cart-form\" value=\"packt_libraries_add_to_cart_form\"
+        \ />\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"cf newsletter-signup-form\" newsletter_id=280>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"dotd-signup-text\"><strong>Sign up here to get these deals straight
+        to your inbox</strong></div> \n\t\t\t\t\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-v3-subscribtion-dotd-form\">\n<div><div class=\"form-item\">\n
+        \n</div>\n<div class=\"form-item\" id=\"edit-mail-wrapper\">\n <input type=\"text\"
+        maxlength=\"128\" name=\"mail\" id=\"edit-mail\" size=\"60\" value=\"\" placeholder=\"Enter
+        your email address\" class=\"form-text\" />\n</div>\n<input type=\"hidden\"
+        name=\"newsletter_id\" id=\"edit-newsletter-id\" value=\"\"  />\n<input type=\"submit\"
+        name=\"op\" id=\"edit-submit-5\" value=\"Submit\"  class=\" form-submit\"
+        />\n<input type=\"hidden\" name=\"form_build_id\" id=\"form-8737d6a4d10856b791bcdee6c014301a\"
+        value=\"form-8737d6a4d10856b791bcdee6c014301a\"  />\n<input type=\"hidden\"
+        name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token\"
+        value=\"3df1b87ccd35e2553a81f22acf750589\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu twocol cf\" id=\"menu-blog-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Blog</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/content/blogs\">Blogs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/tech-hub\">Tech Hub</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/article-network\">Articles</a></p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t\t<img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" alt=\"OpenStack and Software Defined Networking\" title=\"\"
+        width=\"240\" height=\"114\" class=\"lazyload-disabled imagecache imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/openstack-and-software-defined-networking-0\">OpenStack
+        and Software Defined Networking</a></p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-article-one-liner\">One
+        of the key benefits of OpenStack is the ability to control and integrate with
+        Software Defined Networking (SDN) controllers. This article takes a look at
+        what SDN is, and how OpenStack makes it accessible.</p>\n\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/blogs\">Read all our blogs</a></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packt-popup\">\n\t\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Packt Publishing</p>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/about\">About
+        Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/authors\">Our
+        Authors</a></p>\n\t\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/trade-partners\">Trade
+        & Partners</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a href=\"/blog-network\">Blog</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/techprimer-network\">Technology Primers</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/contact-us\">Contact Us</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/careers-with-packt\">Careers</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<!--<p><a
+        href=\"/article-network\">Articles</a></p>-->\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t<!--<div
+        class=\"menu-bar-popup-section-right twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-article-preview-thumb\">\n\t\t\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" alt=\"OpenStack and Software Defined Networking\" title=\"\"
+        width=\"240\" height=\"114\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/></noscript><img
+        src=\"/sites/default/files/blank.gif\" alt=\"OpenStack and Software Defined
+        Networking\" title=\"\" width=\"240\" height=\"114\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_header_article_thumb/OASDN_Cover
+        Image.png.png\" class=\" imagecache imagecache-ppv4_header_article_thumb\"/>\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-article-preview-text\">\n\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\"><a
+        href=\"/books/content/openstack-and-software-defined-networking-0\">OpenStack
+        and Software Defined Networking</a></p>\n\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-article-one-liner\"></p>\n\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/articles\">Read all our articles</a></p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>-->\n\t\t\t\t\t</div>\n\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-support-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Support</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/info/packt/faq\">FAQs</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/ordering\">Ordering Information</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/info/packt/terms-and-conditions\">Terms & Conditions</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/support\">Code Downloads & Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/content/errata\">Submit Errata</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-packtlib-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left twocol\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">PacktLib</p>\n\t\t\t\t\t\t\t\t<div
+        class=\"packt-menu cf\">\n\t\t\t\t\t\t\t\t\t<div class=\"books-menu-column\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"inner\">\n\t\t\t\t\t\t\t\t\t\t\t<p><a href=\"/books/subscription/packtlib\">Subscribe</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/books/subscription/packtlib-business\">PacktLib For Business</a></p>\n\t\t\t\t\t\t\t\t\t\t\t<p><a
+        href=\"/packtlib\">Take me to the Library</a></p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-search-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-search-inner\">\n\t\t\t\t\t\t\t<form  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-libraries-main-search-form\">\n<div>\n<div id=\"menu-bar-search\"
+        class=\"cf\">\n\t<div id=\"menu-bar-search-title\">\n\t\t<div class=\"form-item\">Search</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-box\">\n\t\t<div class=\"form-item\" id=\"main-search-keys-wrapper\">\n
+        <input type=\"text\" name=\"keys\" id=\"main-search-keys\" size=\"49\" value=\"\"
+        placeholder=\"Enter your search terms...\" class=\"form-text\" />\n</div>\n\t</div>\n\t<div
+        id=\"menu-bar-search-button\">\n\t\t<input type=\"submit\" name=\"op\" id=\"edit-submit-7\"
+        value=\"Search\"  class=\" form-submit\" />\n\t</div>\n\t<input type=\"hidden\"
+        name=\"sort\" id=\"edit-sort\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"types\"
+        id=\"edit-types\" value=\"0\"  />\n\n<input type=\"hidden\" name=\"forthcoming\"
+        id=\"edit-forthcoming\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"available\"
+        id=\"edit-available\" value=\"1\"  />\n\n<input type=\"hidden\" name=\"count\"
+        id=\"edit-count\" value=\"20\"  />\n\n\n\n\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-ef46be707463709bb8cf9cdadff2c5fa\" value=\"form-ef46be707463709bb8cf9cdadff2c5fa\"
+        \ />\n\n<input type=\"hidden\" name=\"form_id\" id=\"edit-packt-libraries-main-search-form\"
+        value=\"packt_libraries_main_search_form\"  />\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n</div>\n<div
+        class=\"facet-search-cross facet-search-cross-autocomplete\"></div>\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-popup\">\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-left even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-left-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-preview\">\n\t\t\t\t\t\t\t\t\t<div
+        id=\"menu-bar-popup-cart-item-preview\">\n\n\t\t\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-cart-item-preview-image\">\n\t\t\t\t\t\t\t\t\t\t\t<img
+        src=\"\" />\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<p class=\"menu-bar-popup-title\">Added
+        to Cart</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-cart-item-preview-title\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-oneliner\"></p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-item-preview-additional\">...and <span></span> more</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        class=\"price\"><span id=\"menu-bar-popup-cart-item-preview-currency\"></span><span
+        id=\"menu-bar-popup-cart-item-preview-price\"></span></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-cart-empty-preview\">\n\t\t\t\t\t\t\t\t\tYou don't have
+        anything in your cart right now.\n\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\n\t\t\t\t\t\t<div
+        class=\"menu-bar-popup-section-right even\">\n\t\t\t\t\t\t\t<div class=\"menu-bar-popup-section-right-inner
+        cf\">\n\t\t\t\t\t\t\t\t<div id=\"menu-bar-popup-content\">\n\t\t\t\t\t\t\t\t\t<div
+        class=\"cf\">\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-title\"
+        class=\"menu-bar-popup-title float-left\">Subtotal</p>\n\t\t\t\t\t\t\t\t\t\t<p
+        id=\"menu-bar-popup-subtotal-value\" class=\"menu-bar-popup-title float-right
+        price\"> 0.00</p>\n\t\t\t\t\t\t\t\t\t\t<p id=\"menu-bar-popup-subtotal-currency\"
+        class=\"menu-bar-popup-title float-right price\"></p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<p><strong>Free
+        shipping</strong> on print orders for US, UK, Europe and selected Asian countries</p>\n\t\t\t\t\t\t\t\t\t<form>\n\t\t\t\t\t\t\t\t\t\t<a
+        href=\"https://www.packtpub.com/cart/checkout\" class=\"button-link grey\">View
+        Cart</a>\n\t\t\t\t\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t\t\t\t\t<a href=\"https://www.packtpub.com/cart/checkout/?checkout_step=payment\"
+        class=\"button-link\">Check Out</a>\n\t\t\t\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        id=\"checkout-close\" onclick=\"Packt.headerMenu.hideMenuPopup()\"></div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"menu-bar-popup-menu cf\" id=\"menu-cart-small\">\n\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t<div
+        class=\"small-popup-outer float-right\">\n\t\t\t\t\t\t\t\t<div class=\"small-popup-tick\">\n\t\t\t\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-text\">\n\t\t\t\t\t\t\t\t\t<strong>\n\t\t\t\t\t\t\t\t\t\tTitle
+        added to cart\n\t\t\t\t\t\t\t\t\t</strong>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-seperator\">\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div
+        class=\"small-popup-arrows\">\n&nbsp;\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t<div
+        id=\"menu-bar-popup-inner-bottom\" class=\"cf\"></div>\n\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t<div
+        id=\"main-container\" class=\"not-front logged-in page-account no-sidebars
+        page-account-my-ebooks section-account \">\n\t\t\t\t<div id=\"main\" class=\"\">\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t
+        <!-- #content -->\n\t\t\t\t\t \t<div id=\"content\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t
+        \t\n\t\t\t\t\t \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t\t \t\t\t\t\t\t\t\t \t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t\t \t\t\t\t\t\t\t \t\t\t<div id=\"messages-container\">\n\t\t\t\t\t\t\t
+        \t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t \t\t\t\t\t\t\t\t \t\t\t</div>\n\t\t\t\t\t\t
+        \t\t\t\t\t\t\t \t\t\n\t\t\t\t\t \t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<a
+        name=\"main-content\" id=\"main-content\"></a>\n\t\t\t\t\t\t\t<div id=\"account-page\">\n\t<div
+        class=\"section-inner cf\" id=\"account-page-inner\">\n\t\t\n\n<div id=\"left-side-menu\"
+        class=\"menu-account\">\n\t<div id=\"left-side-menu-inner\">\n\t\t<h1>John
+        Doe</h1>\n\t\t\n\t\t\t\t\t\t<div class=\"left-menu-item border-top\">\n\t\t\t\t\t<a
+        href=\"/account\" class=\"navigation\">Account Details</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"left-menu-item border-top\">\n\t\t\t\t\t<a href=\"/account/my-order-history\"
+        class=\"navigation\">My Order History</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"left-menu-item border-top\">\n\t\t\t\t\t<a href=\"/account/my-ebooks\"
+        class=\"navigation selected active\">My eBooks</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"left-menu-item border-top\">\n\t\t\t\t\t<a href=\"/account/share/history\"
+        class=\"navigation\">eBook Sharing History</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"left-menu-item border-top\">\n\t\t\t\t\t<a href=\"/account/my-videos\"
+        class=\"navigation\">My Videos</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"left-menu-item
+        border-top\">\n\t\t\t\t\t<a href=\"/account/my-courses\" class=\"navigation\">My
+        Courses</a>\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"left-menu-item border-top\">\n\t\t\t\t\t<a
+        href=\"/account/my-subscriptions\" class=\"navigation\">My Subscriptions</a>\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"left-menu-item border-top\"></div>\n\t\t\n\t\t\t\t\t<form action=\"/logout\"
+        class=\"logout-left-menu\">\n\t\t\t\t<input type=\"submit\" value=\"Log Out\"/>\n\t\t\t</form>\n\t\t\t</div>\n</div>\t\t<div
+        id=\"account-page-right-content\" class=\"float-left\">\n\t\t\t<div id=\"account-right-content\">\n\t\t\t\t<h1>My
+        eBooks </h1>\n\n\n<div id=\"product-account-list\">\n\t\t\t\t\t\t\t\t<div
+        class=\"product-line unseen\" nid=\"16965\" title=\"Learning iPhone Game Development
+        with Cocos2d 3.0 [eBook]\">\n\t\t\t\t\t<div class=\"product-top-line\">\n\t\t\t\t\t\t<div
+        class=\"float-left product-thumbnail toggle\" style=\"display:none\">\n\t\t\t\t\t\t\t<a
+        href=\"/game-development/learning-iphone-game-development-cocos2d-30\">\n\t\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/thumbview/0144OS_Cocos2D
+        3.0.jpg\" alt=\"Learning iPhone Game Development with Cocos2d 3.0 [eBook]\"
+        title=\"Learning iPhone Game Development with Cocos2d 3.0 [eBook]\" width=\"94\"
+        height=\"116\" class=\" imagecache imagecache-thumbview\"/></noscript><img
+        src=\"/sites/default/files/blank.gif\" alt=\"Learning iPhone Game Development
+        with Cocos2d 3.0 [eBook]\" title=\"Learning iPhone Game Development with Cocos2d
+        3.0 [eBook]\" width=\"94\" height=\"116\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/thumbview/0144OS_Cocos2D
+        3.0.jpg\" class=\" imagecache imagecache-thumbview\"/>\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"float-left product-info\">\n\t\t\t\t\t\t\t<div class=\"title\">\n\t\t\t\t\t\t\t\tLearning
+        iPhone Game Development with Cocos2d 3.0 [eBook]\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div
+        class=\"author\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKirill
+        Muzykov<br />\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"toggle\" style=\"display:none\">\n\t\t\t\t\t\t\t\t<div
+        class=\"book-star-rating\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t<table
+        class=\"product-reference-table\">\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<th
+        class=\"price-column\">Price</th>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Order
+        Reference</th>\n\t\t\t\t\t\t\t\t\t\t<th>Order Date</th>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td><span
+        class=\"uc-price\">\u20AC0.00</span></td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>PAC-16-6488136-1917745</td>\n\t\t\t\t\t\t\t\t\t\t<td>16/02/16</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"float-right toggle-product-line\">+</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"product-buttons-line toggle\" style=\"display:none\">\n\n\t\t\t\t\t\t<!--<a
+        onclick=\"_paq.push(['_trackPageview','/ebook_download/16965/pdf']); _paq.push(['_trackEvent',
+        'eBook download', 'Learning iPhone Game Development with Cocos2d 3.0 [eBook]']);\"
+        href=\"/ebook_download/16965/pdf\"><input type=\"button\" value=\"Download\"
+        class=\"\"/></a>-->\n\n\t\t\t\t\t\t<div class=\"download-container cf\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button large w-half showPacktLibReader\"
+        nid=\"16966\" type=\"book\" isbn=\"1111122222333\" category=\"All Books\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon read\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Read
+        Online</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/add_to_cart_upgrade/16966\">\n\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-half\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon cart\"></div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Upgrade
+        to Print</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div
+        class=\"download-container cf \">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/16965/pdf\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"pdf\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">PDF</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/16965/epub\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"epub\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">ePub</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/16965/mobi\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"mobi\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">Mobi</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/code_download/16966\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon download\"></div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Code
+        Files</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\" class=\"kindle-link\" nid=\"16966\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon send\"></div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Kindle</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"product-line unseen\" nid=\"12544\" title=\"Multithreading in C# 5.0
+        Cookbook [eBook]\">\n\t\t\t\t\t<div class=\"product-top-line\">\n\t\t\t\t\t\t<div
+        class=\"float-left product-thumbnail toggle\" style=\"display:none\">\n\t\t\t\t\t\t\t<a
+        href=\"/application-development/multithreading-c-50-cookbook\">\n\t\t\t\t\t\t\t\t<noscript><img
+        src=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/thumbview/7644OT.jpg\"
+        alt=\"Multithreading in C# 5.0 Cookbook [eBook]\" title=\"Multithreading in
+        C# 5.0 Cookbook [eBook]\" width=\"93\" height=\"116\" class=\" imagecache
+        imagecache-thumbview\"/></noscript><img src=\"/sites/default/files/blank.gif\"
+        alt=\"Multithreading in C# 5.0 Cookbook [eBook]\" title=\"Multithreading in
+        C# 5.0 Cookbook [eBook]\" width=\"93\" height=\"116\" data-original=\"//dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/thumbview/7644OT.jpg\"
+        class=\" imagecache imagecache-thumbview\"/>\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"float-left product-info\">\n\t\t\t\t\t\t\t<div class=\"title\">\n\t\t\t\t\t\t\t\tMultithreading
+        in C# 5.0 Cookbook [eBook]\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"author\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEugene
+        Agafonov<br />\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"toggle\"
+        style=\"display:none\">\n\t\t\t\t\t\t\t\t<div class=\"book-star-rating\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t<table
+        class=\"product-reference-table\">\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<th
+        class=\"price-column\">Price</th>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Order
+        Reference</th>\n\t\t\t\t\t\t\t\t\t\t<th>Order Date</th>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td><span
+        class=\"uc-price\">\u20AC0.00</span></td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>PAC-16-6423874-1917745</td>\n\t\t\t\t\t\t\t\t\t\t<td>13/02/16</td>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"float-right toggle-product-line\">+</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"product-buttons-line toggle\" style=\"display:none\">\n\n\t\t\t\t\t\t<!--<a
+        onclick=\"_paq.push(['_trackPageview','/ebook_download/12544/pdf']); _paq.push(['_trackEvent',
+        'eBook download', 'Multithreading in C# 5.0 Cookbook [eBook]']);\" href=\"/ebook_download/12544/pdf\"><input
+        type=\"button\" value=\"Download\" class=\"\"/></a>-->\n\n\t\t\t\t\t\t<div
+        class=\"download-container cf\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button large w-half showPacktLibReader\"
+        nid=\"12545\" type=\"book\" isbn=\"9781849697644\" category=\"All Books\">\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon read\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Read
+        Online</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/add_to_cart_upgrade/12545\">\n\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-half\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon cart\"></div>\n\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Upgrade
+        to Print</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div
+        class=\"download-container cf \">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/12544/pdf\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"pdf\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">PDF</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/12544/epub\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"epub\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">ePub</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/ebook_download/12544/mobi\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\" format=\"mobi\">\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon
+        download\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-text\">Mobi</div>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"/code_download/12545\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon download\"></div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Code
+        Files</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a
+        href=\"#\" class=\"kindle-link\" nid=\"12545\">\n\t\t\t\t\t\t\t\t\t<div class=\"fake-button
+        large w-quarter\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-icon send\"></div>\n\t\t\t\t\t\t\t\t\t\t<div
+        class=\"fake-button-icon separator\"></div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"fake-button-text\">Kindle</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t\t<div
+        class=\"product-line\"></div>\n\t\t\n</div>\n\n\n\n\t<div id=\"kindle-form\"
+        style=\"display:none\">\n\t\t\t\t<div>You have not yet registered with us
+        your free Kindle address. Please do so below and we'll send your selected
+        ebook to your account.</div>\n\t\t\n\t\t<form action=\"/account/my-ebooks\"
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-kindle-edit-address-form\">\n<div><input
+        type=\"hidden\" name=\"book_nid\" id=\"edit-book-nid\" value=\"\"  />\n<div
+        class=\"form-item\" id=\"edit-type-wrapper\">\n <label for=\"edit-type\">eBook
+        format <span class=\"form-required\" title=\"This field is required.\">*</span></label>\n
+        <select name=\"type\" class=\"form-select required\" id=\"edit-type\" ><option
+        value=\"pdf\">PDF format</option><option value=\"mobi\" selected=\"selected\">Kindle
+        format</option></select>\n</div>\n<div class=\"email-suffix\"><div class=\"form-item\"
+        id=\"edit-address-wrapper\">\n <label for=\"edit-address\">Your Kindle address
+        <span class=\"form-required\" title=\"This field is required.\">*</span></label>\n
+        <input type=\"text\" maxlength=\"128\" name=\"address\" id=\"edit-address\"
+        size=\"60\" value=\"\" class=\"form-text required\" />\n</div>\n<div class=\"float-left
+        suffix\">@kindle.com</div><div class=\"cf\"></div></div><input type=\"hidden\"
+        name=\"action\" id=\"edit-action\" value=\"kindle\"  />\n<input type=\"submit\"
+        name=\"op\" id=\"edit-submit-1\" value=\"Send eBook\"  class=\" form-submit\"
+        />\n<input type=\"submit\" name=\"op\" id=\"edit-cancel-1\" value=\"Cancel\"
+        \ class=\" form-submit\" />\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-5cb05294437b7f59b09868e94681a437\" value=\"form-5cb05294437b7f59b09868e94681a437\"
+        \ />\n<input type=\"hidden\" name=\"form_token\" id=\"edit-packt-kindle-edit-address-form-form-token\"
+        value=\"bd61d021cee58e39221d8fca317f585b\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-kindle-edit-address-form\" value=\"packt_kindle_edit_address_form\"
+        \ />\n\n</div></form>\n\n\t\t<div>If you have not yet set up your Kindle's
+        email address, please refer to the <a href=\"http://www.amazon.co.uk/gp/help/customer/display.html?nodeId=200487840#managedevices\">
+        Kindle documentation</a>.</div>\n\t\t<div>Before sending your first eBook
+        to your Kindle, please add <strong>kindle@packtpub.com</strong> to your Kindle
+        account's list of approved email addresses. If you need guidance on how to
+        do this, please refer to <a href=\"http://www.amazon.co.uk/gp/help/customer/isplay.html?nodeId=200487840#pdocs\">
+        Amazon's guide</a>.</div>\n\t</div>\n\t<div id=\"share-form\" style=\"display:
+        none;\">\n\t\t<form action=\"/account/my-ebooks\"  accept-charset=\"UTF-8\"
+        method=\"post\" id=\"packt-v3-share-ebook-share-form\">\n<div><input type=\"hidden\"
+        name=\"nid\" id=\"edit-nid\" value=\"\"  />\n<input type=\"hidden\" name=\"title\"
+        id=\"edit-title\" value=\"\"  />\n\n<div id=\"share-form-textfields\">\n\t<div
+        class=\"form-item\" id=\"edit-first-name-wrapper\">\n <label for=\"edit-first-name\">First
+        Name <span class=\"form-required\" title=\"This field is required.\">*</span></label>\n
+        <input type=\"text\" maxlength=\"128\" name=\"first_name\" id=\"edit-first-name\"
+        size=\"60\" value=\"\" class=\"form-text required\" />\n <div class=\"description\">Enter
+        First Name of the person you want to share the ebook with</div>\n</div>\n\t<div
+        class=\"form-item\" id=\"edit-last-name-wrapper\">\n <label for=\"edit-last-name\">Last
+        Name <span class=\"form-required\" title=\"This field is required.\">*</span></label>\n
+        <input type=\"text\" maxlength=\"128\" name=\"last_name\" id=\"edit-last-name\"
+        size=\"60\" value=\"\" class=\"form-text required\" />\n <div class=\"description\">Enter
+        Last Name of the person you want to share the ebook with</div>\n</div>\n\t<div
+        class=\"form-item\" id=\"edit-email-wrapper\">\n <label for=\"edit-email\">Email
+        address <span class=\"form-required\" title=\"This field is required.\">*</span></label>\n
+        <input type=\"text\" maxlength=\"128\" name=\"email\" id=\"edit-email\" size=\"60\"
+        value=\"\" class=\"form-text required\" />\n <div class=\"description\">Enter
+        the email address of the person you want to share the ebook with</div>\n</div>\n</div>\n<div
+        id=\"share-form-buttons\">\n\t<input type=\"submit\" name=\"op\" id=\"edit-submit\"
+        value=\"Send\"  class=\" form-submit\" />\n\t<input type=\"submit\" name=\"op\"
+        id=\"edit-cancel\" value=\"Cancel\"  class=\" form-submit\" />\n</div>\n<input
+        type=\"hidden\" name=\"form_token\" id=\"edit-packt-v3-share-ebook-share-form-form-token\"
+        value=\"07d480b1088296ed6a9faf1cde86391d\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-share-ebook-share-form\" value=\"packt_v3_share_ebook_share_form\"
+        \ />\n\n\n</div></form>\n\t</div>\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\t\t\t\t\t
+        \t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<!-- /#content -->\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t<!--
+        #footer -->\n\t\t\t<div id=\"footer\" class=\"region region-footer\">\n\t\t\t\t<div
+        class=\"section-inner cf\">\n\t\t\t\t\t<div class=\"footer-main-block\">\n\t\t\t\t\t\t<div
+        class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Contact Us</h2>\n\t\t\t\t\t\t\t<p>Get
+        in touch&nbsp;<a href=\"/books/info/packt/contact-us\">here</a>&nbsp;<span
+        style=\"font-family: Calibri, sans-serif; font-size: 11pt; line-height: 115%;\">if
+        you have any queries or issues.</span></p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block middle-footer-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Help
+        & Support</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Click&nbsp;<a href=\"/books/info/packt/faq\">here</a>&nbsp;for
+        FAQs, order information, T&amp;Cs, errata and code downloads.</p>\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-main-block\">\n\t\t\t\t\t\t<div class=\"footer-section-inner\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<h2>Alerts
+        & Offers</h2>\n\t\t\t\t\t\t\t<p class=\"MsoNormal\">Sign up to our emails
+        for regular updates, bespoke offers, exclusive discounts and great free content.</p>\t\t\t\t\t\t\t<form
+        \ accept-charset=\"UTF-8\" method=\"post\" id=\"packt-v3-subscribtion-dotd-form-1\">\n<div><div
+        class=\"form-item\">\n \n</div>\n<div class=\"form-item\" id=\"edit-mail-1-wrapper\">\n
+        <input type=\"text\" maxlength=\"128\" name=\"mail\" id=\"edit-mail-1\" size=\"60\"
+        value=\"\" placeholder=\"Enter your email address\" class=\"form-text\" />\n</div>\n<input
+        type=\"hidden\" name=\"newsletter_id\" id=\"edit-newsletter-id-1\" value=\"\"
+        \ />\n<input type=\"submit\" name=\"op\" id=\"edit-submit-6\" value=\"Submit\"
+        \ class=\" form-submit\" />\n<input type=\"hidden\" name=\"form_build_id\"
+        id=\"form-81598cfb5d19a9995192c8d3082f98e6\" value=\"form-81598cfb5d19a9995192c8d3082f98e6\"
+        \ />\n<input type=\"hidden\" name=\"form_token\" id=\"edit-packt-v3-subscribtion-dotd-form-form-token-1\"
+        value=\"3df1b87ccd35e2553a81f22acf750589\"  />\n<input type=\"hidden\" name=\"form_id\"
+        id=\"edit-packt-v3-subscribtion-dotd-form-1\" value=\"packt_v3_subscribtion_dotd_form\"
+        \ />\n\n</div></form>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer -->\n\n\t\t\t<!-- #footer-bottom -->\n\t\t\t<div id=\"footer-bottom\"
+        class=\"region region-footer-bottom\">\n\t\t\t\t<div class=\"section-inner
+        cf\">\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<div class=\"footer-bottom-block-left\">\n\t\t\t\t\t\t\t&copy;
+        Packt Publishing Limited.\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\tAll Rights
+        Reserved\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block
+        footer-contact-us\">\n\t\t\t\t\t\t<a href=\"/books/info/packt/contact-us\">Contact
+        Us</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\tView
+        our <a href=\"/books/info/packt/cookies\">Cookie Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div
+        class=\"footer-bottom-block\">\n\t\t\t\t\t\tOur <a href=\"/books/info/packt/privacy\">Privacy
+        Policy</a>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"footer-bottom-block\">\n\t\t\t\t\t\t<a
+        target=\"_blank\" href=\"http://www.linkedin.com/company/packt-publishing\"
+        class=\"footer-social linkedin\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://twitter.com/packtpub\"
+        class=\"footer-social twitter\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"http://www.facebook.com/packtpub\"
+        class=\"footer-social facebook\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://plus.google.com/112328881995125817822\"
+        class=\"footer-social gplus\"></a>\n\t\t\t\t\t\t<a target=\"_blank\" href=\"https://www.youtube.com/user/packt1000\"
+        class=\"footer-social youtube\"></a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<!--
+        /#footer-bottom -->\n\t\t\t<script>\n\t\t\t(function (w,i,d,g,e,t,s)\n\t\t\t{w[d]
+        = w[d]||[];t= i.createElement(g); t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t,
+        s); }\n\t\t\t)(window, document, '_gscq','script','//widgets.getsitecontrol.com/18511/script.js');\n\t\t\t</script>\n\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t</div>\n\t\t<!--
+        /#page -->\n\t\t\n\t\t<div id=\"content-overlay\"></div>\n\t\t\n\t\t\t\t\n\t</body>\n</html>\n"}
+    headers:
+      age: ['0']
+      cache-control: ['store, no-cache, must-revalidate, post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-type: [text/html; charset=utf-8]
+      date: ['Tue, 16 Feb 2016 21:32:40 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      server: [nginx/1.4.5]
+      via: [1.1 varnish]
+      x-country-code: [NL]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Cookie: [SESS_live=jdis0fiudslfksldfji2342lkdjfldf]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: https://www.packtpub.com/code_download/12545
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      cache-control: ['store, no-cache, must-revalidate', 'post-check=0, pre-check=0']
+      connection: [keep-alive]
+      content-length: ['0']
+      content-type: [text/html; charset=utf-8]
+      date: ['Mon, 22 Feb 2016 20:08:16 GMT']
+      expires: ['Sun, 19 Nov 1978 05:00:00 GMT']
+      last-modified: ['Mon, 22 Feb 2016 20:08:04 GMT']
+      location: ['http://sdkjf23iu4lkdfjdf.cloudfront.net/9781849697644-MULTITHREADING_IN_C_50_COOKBOOK/9781849697644_code.zip?Policy=jfsidfu02u34o2984ydifsdlfjalsfjjKJDKJFKDLffds&Signature=Q2NCZwFdV99ufaOw3toV~9fV~4awW4lGIlA02bGhPSBdAfHVwB71kdwGQfoVFfQA-KQFBCtJyKSF3ppGkJyWskvLgYJl35UuNo0MR28WhWzTFpRNyaq9Vz-P-BEZ94JyX7cnXIXy3L7isOrV5n4SU5X4DkrCLQ5q-~Gze7WZEcM_&Key-Pair-Id=KDJFOWEKRLKJDF78923']
+      server: [nginx/1.4.5]
+    status: {code: 302, message: Found}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: http://sdkjf23iu4lkdfjdf.cloudfront.net/9781849697644-MULTITHREADING_IN_C_50_COOKBOOK/9781849697644_code.zip?Policy=jfsidfu02u34o2984ydifsdlfjalsfjjKJDKJFKDLffds&Signature=Q2NCZwFdV99ufaOw3toV~9fV~4awW4lGIlA02bGhPSBdAfHVwB71kdwGQfoVFfQA-KQFBCtJyKSF3ppGkJyWskvLgYJl35UuNo0MR28WhWzTFpRNyaq9Vz-P-BEZ94JyX7cnXIXy3L7isOrV5n4SU5X4DkrCLQ5q-~Gze7WZEcM_&Key-Pair-Id=KDJFOWEKRLKJDF78923
+  response:
+    body:
+      string: test content
+    headers:
+      accept-ranges: [bytes]
+      connection: [keep-alive]
+      content-length: ['272472']
+      content-type: [application/zip]
+      date: ['Mon, 22 Feb 2016 20:09:27 GMT']
+      etag: ['"io32u4osdkfaksdfjo2iu4lkjldfkjasd934"']
+      last-modified: ['Fri, 20 Nov 2015 12:01:20 GMT']
+      server: [AmazonS3]
+      via: [1.1 2934lkdflko2j4lk2jlrksdjafkdf.cloudfront.net (CloudFront)]
+      x-amz-cf-id: [C-h_askdfjl23j4ljlksdjfs9229323232lFW6w_i9zsWhg499ULg==]
+      x-amz-meta-s3cmd-attrs: ['uid:80/gname:www/uname:www/gid:80/mode:33204/mtime:1384927483/atime:1447758238/ctime:1384927483']
+      x-cache: [Miss from cloudfront]
+    status: {code: 200, message: OK}
+version: 1
