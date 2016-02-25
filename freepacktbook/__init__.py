@@ -1,5 +1,6 @@
 from os import environ, mkdir, path
 import argparse
+import logging
 import re
 
 from bs4 import BeautifulSoup
@@ -10,12 +11,21 @@ from tqdm import tqdm
 from .slack import SlackNotification
 
 
+logger = logging.getLogger(__name__)
+
 class ImproperlyConfiguredError(Exception):
     pass
 
 
 class InvalidCredentialsError(Exception):
     pass
+
+
+class Session(requests.Session):
+
+    def request(self, method, url, **kwargs):
+        logger.debug('%s: %s' % (method, url))
+        return super(Session, self).request(method, url, **kwargs)
 
 
 class FreePacktBook(object):
@@ -29,7 +39,7 @@ class FreePacktBook(object):
     book_formats = ['epub', 'mobi', 'pdf']
 
     def __init__(self, email=None, password=None):
-        self.session = requests.Session()
+        self.session = Session()
         self.email = email
         self.password = password
 
