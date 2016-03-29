@@ -34,7 +34,7 @@ class FreePacktBook(object):
     code_files_url = base_url + '/code_download/%(id)s'
     download_url = base_url + '/ebook_download/%(book_id)s/%(format)s'
     my_books_url = base_url + '/account/my-ebooks'
-    url = base_url + '/packt/offers/free-learning/'
+    url = base_url + '/packt/offers/free-learning'
 
     book_formats = ['epub', 'mobi', 'pdf']
 
