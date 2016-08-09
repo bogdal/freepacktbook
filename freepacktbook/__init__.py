@@ -40,6 +40,7 @@ class FreePacktBook(object):
 
     def __init__(self, email=None, password=None):
         self.session = Session()
+        self.session.headers.update({'User-Agent': 'FreePacktBook'})
         self.email = email
         self.password = password
 
