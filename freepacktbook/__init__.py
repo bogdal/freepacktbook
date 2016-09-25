@@ -138,13 +138,17 @@ class FreePacktBook(object):
         return books
 
 
+def check_config(variables):
+    for variable in variables:
+        if variable not in environ:
+            raise ImproperlyConfiguredError(
+                '%s environment variable is required' % variable)
+
+
 def env_variables_required(variables):
     def decorated(func):
         def new_function():
-            for variable in variables:
-                if not variable in environ:
-                    raise ImproperlyConfiguredError(
-                        'Env variable %s is missing.' % variable)
+            check_config(variables)
             func()
         return new_function
     return decorated
@@ -152,16 +156,26 @@ def env_variables_required(variables):
 
 @env_variables_required(['PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD'])
 def claim_free_ebook():
+    parser = argparse.ArgumentParser(description='Claim Free PacktPub eBook')
+    parser.add_argument(
+        '--download', action='store_true', help='download ebook')
+    parser.add_argument(
+        '--slack', action='store_true', help='send Slack notification')
+    args = parser.parse_args()
+    if args.download:
+        check_config(['PACKTPUB_BOOKS_DIR'])
+
     client = FreePacktBook(
         environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
     book = client.claim_free_ebook()
 
-    if environ.get('PACKTPUB_BOOKS_DIR'):
+    if args.download:
         client.download_book(book, environ['PACKTPUB_BOOKS_DIR'])
 
-    slack_notification = SlackNotification(
-        environ.get('SLACK_URL'), environ.get('SLACK_CHANNEL'))
-    slack_notification.notify(book)
+    if args.slack:
+        slack_notification = SlackNotification(
+            environ.get('SLACK_URL'), environ.get('SLACK_CHANNEL'))
+        slack_notification.notify(book)
     print(book['title'])
 
 
@@ -170,7 +184,7 @@ def claim_free_ebook():
 def download_ebooks():
     parser = argparse.ArgumentParser(description='Download all my ebooks')
     parser.add_argument(
-        '--force', action='store_true', help='override existing files'),
+        '--force', action='store_true', help='override existing files')
     parser.add_argument(
         '--formats', nargs='+', metavar='FORMAT',
         help='ebook formats (epub, mobi, pdf)')
