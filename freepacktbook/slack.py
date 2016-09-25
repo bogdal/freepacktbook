@@ -8,6 +8,8 @@ class SlackNotification(object):
     def __init__(self, slack_url, channel):
         self.slack_url = slack_url
         self.channel = channel
+        if not self.channel.startswith('#'):
+            self.channel = '#%s' % (self.channel,)
 
     def notify(self, data):
         if not all([self.slack_url, self.channel]):

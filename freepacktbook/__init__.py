@@ -162,6 +162,7 @@ def claim_free_ebook():
     slack_notification = SlackNotification(
         environ.get('SLACK_URL'), environ.get('SLACK_CHANNEL'))
     slack_notification.notify(book)
+    print(book['title'])
 
 
 @env_variables_required([
