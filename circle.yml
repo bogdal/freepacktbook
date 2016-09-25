@@ -1,0 +1,12 @@
+machine:
+  python:
+    version: 3.5.1
+dependencies:
+  override:
+    - pip install codecov tox tox-pyenv
+    - pyenv local 2.7.9 3.4.2
+test:
+  override:
+  - tox -- -x tests --cov
+  post:
+  - codecov
