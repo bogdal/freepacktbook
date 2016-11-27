@@ -1,6 +1,8 @@
 machine:
   python:
     version: 3.5.1
+  services:
+    - docker
 dependencies:
   override:
     - pip install codecov tox tox-pyenv
@@ -10,3 +12,10 @@ test:
   - tox -- -x tests --cov
   post:
   - codecov
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker build -t $DOCKER_REPOSITORY .
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker push $DOCKER_REPOSITORY
