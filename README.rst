@@ -96,15 +96,35 @@ Build an image:
 .. code-block:: bash
 
     $ docker build -t freepacktbook .
+
+If you want to change the default time zone, use the ``TZ`` build argument:
+
+.. code-block:: bash
+
+    $ docker build --build-arg TZ=UTC -t freepacktbook .
     
 Run a new container:
 
 .. code-block:: bash
 
-    $ docker run \
-     --env PACKTPUB_EMAIL=${PACKTPUB_EMAIL} \
-     --env PACKTPUB_PASSWORD=${PACKTPUB_PASSWORD} \
-     --detach \
-     --name freepacktbook \
-     freepacktbook
+    $ docker run -d \
+        --name freepacktbook \
+        -e PACKTPUB_EMAIL=<my-packtpub-email> \
+        -e PACKTPUB_PASSWORD=<my-packtpub-password> \
+      freepacktbook
 
+The ``PACKTPUB_ARGS`` env variable passes the additional arguments to the ``claim_free_ebook`` command:
+
+.. code-block:: bash
+
+    $ docker run -d \
+        --name freepacktbook \
+        --restart=always \
+        -e PACKTPUB_EMAIL=<my-packtpub-email> \
+        -e PACKTPUB_PASSWORD=<my-packtpub-password> \
+        -e PACKTPUB_ARGS='--download' \
+        -v <path-to-books-dir>:/data \
+      freepacktbook
+      
+Also available on **Docker Hub**
+`bogdal/freepacktbook:latest <https://hub.docker.com/r/bogdal/freepacktbook/>`_
