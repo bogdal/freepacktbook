@@ -161,7 +161,8 @@ def claim_free_ebook():
         '--download', action='store_true', help='download ebook')
     parser.add_argument(
         '--slack', action='store_true', help='send Slack notification')
-    args = parser.parse_args()
+    env_args = environ.get('PACKTPUB_ARGS')
+    args = parser.parse_args(env_args.split() if env_args else None)
     if args.download:
         check_config(['PACKTPUB_BOOKS_DIR'])
 
