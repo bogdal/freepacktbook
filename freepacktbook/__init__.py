@@ -1,6 +1,7 @@
 from os import environ, mkdir, path
-import argparse
+from argparse import ArgumentParser, HelpFormatter
 import logging
+from operator import attrgetter
 import re
 
 from bs4 import BeautifulSoup
@@ -105,20 +106,22 @@ class FreePacktBook(object):
     @auth_required
     def download_book(self, book, destination_dir='.', formats=None,
                       override=False):
+        title = book['title']
         if formats is None:
             formats = self.book_formats
         for book_format in formats:
             url = self.download_url % {
                 'book_id': book['id'], 'format': book_format}
-            slug = slugify(book['title'], separator='_')
-            file_path = '%s/%s.%s' % (destination_dir, slug, book_format)
+            slug = slugify(title, separator='_')
+            file_path = '%s/%s/%s.%s' % (destination_dir, title, slug, book_format)
             self.download_file(url, file_path, override=override)
 
     @auth_required
     def download_code_files(self, book, destination_dir='.', override=False):
+        title = book['title']
         url = self.code_files_url % {'id': int(book['id']) + 1}
-        file_path = '%s/%s_code.zip' % (
-            destination_dir, slugify(book['title'], separator='_'))
+        file_path = '%s/%s/%s_code.zip' % (
+            destination_dir, title, slugify(title, separator='_'))
         self.download_file(url, file_path, override=override)
 
     @auth_required
@@ -147,16 +150,34 @@ def check_config(variables):
 
 def env_variables_required(variables):
     def decorated(func):
-        def new_function():
+        def new_function(*args, **kwargs):
             check_config(variables)
-            func()
+            func(*args, **kwargs)
         return new_function
     return decorated
 
 
+def download_parser(description):
+
+    class SortedHelpFormatter(HelpFormatter):
+        def add_arguments(self, actions):
+            actions = sorted(actions, key=attrgetter('option_strings'))
+            super(SortedHelpFormatter, self).add_arguments(actions)
+
+    parser = ArgumentParser(description=description, formatter_class=SortedHelpFormatter)
+    parser.add_argument(
+        '--force', action='store_true', help='override existing files')
+    parser.add_argument(
+        '--formats', nargs='+', metavar='FORMAT',
+        help='ebook formats (epub, mobi, pdf)')
+    parser.add_argument(
+        '--with-code-files', action='store_true', help='download code files')
+    return parser
+
+
 @env_variables_required(['PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD'])
 def claim_free_ebook():
-    parser = argparse.ArgumentParser(description='Claim Free PacktPub eBook')
+    parser = download_parser('Claim Free PacktPub eBook')
     parser.add_argument(
         '--download', action='store_true', help='download ebook')
     parser.add_argument(
@@ -171,7 +192,7 @@ def claim_free_ebook():
     book = client.claim_free_ebook()
 
     if args.download:
-        client.download_book(book, environ['PACKTPUB_BOOKS_DIR'])
+        download_ebooks(client, parser, [book])
 
     if args.slack:
         slack_notification = SlackNotification(
@@ -182,26 +203,22 @@ def claim_free_ebook():
 
 @env_variables_required([
     'PACKTPUB_EMAIL', 'PACKTPUB_PASSWORD', 'PACKTPUB_BOOKS_DIR'])
-def download_ebooks():
-    parser = argparse.ArgumentParser(description='Download all my ebooks')
-    parser.add_argument(
-        '--force', action='store_true', help='override existing files')
-    parser.add_argument(
-        '--formats', nargs='+', metavar='FORMAT',
-        help='ebook formats (epub, mobi, pdf)')
-    parser.add_argument(
-        '--with-code-files', action='store_true', help='download code files')
+def download_ebooks(client=None, parser=None, books=None):
+    if parser is None:
+        parser = download_parser('Download all my ebooks')
     args = parser.parse_args()
+    if client is None:
+        client = FreePacktBook(
+            environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
+    if books is None:
+        books = client.my_books()
     formats = args.formats
     if formats:
-        formats = filter(lambda x: x in FreePacktBook.book_formats, formats)
-    client = FreePacktBook(
-        environ.get('PACKTPUB_EMAIL'), environ.get('PACKTPUB_PASSWORD'))
-    destination = environ.get('PACKTPUB_BOOKS_DIR')
-    for book in client.my_books():
+        formats = filter(lambda x: x in client.book_formats, formats)
+    for book in books:
         kwargs = {
             'book': book,
-            'destination_dir': destination,
+            'destination_dir': environ.get('PACKTPUB_BOOKS_DIR'),
             'override': args.force}
         client.download_book(formats=formats, **kwargs)
         if args.with_code_files:
