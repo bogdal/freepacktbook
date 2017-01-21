@@ -48,7 +48,8 @@ def test_download_book(packtpub_client, monkeypatch):
     with patch.object(builtins, 'open', mock_open()) as result:
         packtpub_client.download_book(
             book, destination_dir='/test',formats=['epub'])
-    assert result.call_args[0][0] == '/test/%s.epub' % (BOOK_SLUG,)
+    assert result.call_args[0][0] == '/test/%s/%s.epub' % (
+        BOOK_TITLE, BOOK_SLUG,)
 
 
 @vcr.use_cassette
@@ -59,7 +60,8 @@ def test_download_code_files(packtpub_client, monkeypatch):
     with patch.object(builtins, 'open', mock_open()) as result:
         packtpub_client.download_code_files(
             book, destination_dir='/test')
-    assert result.call_args[0][0] == '/test/%s_code.zip' % (BOOK_SLUG,)
+    assert result.call_args[0][0] == '/test/%s/%s_code.zip' % (
+        BOOK_TITLE, BOOK_SLUG,)
 
 
 @vcr.use_cassette
