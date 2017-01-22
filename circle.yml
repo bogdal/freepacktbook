@@ -11,6 +11,7 @@ dependencies:
     - pyenv local 2.7.9 3.4.2
 test:
   override:
+  - docker build -t $DOCKER_REPOSITORY:latest .
   - tox -- -x tests --cov
   post:
   - codecov
@@ -18,6 +19,11 @@ deployment:
   hub:
     branch: master
     commands:
-      - docker build -t $DOCKER_REPOSITORY .
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push $DOCKER_REPOSITORY
+      - docker push $DOCKER_REPOSITORY:latest
+  release:
+    tag: /.*/
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker tag $DOCKER_REPOSITORY:latest $DOCKER_REPOSITORY:$CIRCLE_TAG
+      - docker push $DOCKER_REPOSITORY:$CIRCLE_TAG
