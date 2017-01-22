@@ -95,8 +95,10 @@ class FreePacktBook(object):
         main_book_image = page.find('div', {'class': 'dotd-main-book-image'})
         claim_url = page.find('div', {'class': 'free-ebook'}).a['href']
         book_id = re.search(r'claim/(\d+)/', claim_url).groups()[0]
+        title = summary.find('div', {'class': 'dotd-title'}).getText().strip()
+        title = title.replace(':', ' -')
         return {
-            'title': summary.find('div', {'class': 'dotd-title'}).getText().strip(),
+            'title': title,
             'description': summary.find('div', {'class': None}).getText().strip(),
             'book_url': self.base_url + main_book_image.a['href'],
             'image_url': 'https:%s' % main_book_image.img['src'],
@@ -134,8 +136,9 @@ class FreePacktBook(object):
             if not line.get('nid'):
                 continue
             title = line.find('div', {'class': 'title'}).getText().strip()
+            title = title.replace(' [eBook]', '').replace(':', ' -')
             books.append({
-                'title': title.replace(' [eBook]', ''),
+                'title': title,
                 'book_url': self.base_url + line.find('div', {
                     'class': 'product-thumbnail'}).a['href'],
                 'id': line['nid']})

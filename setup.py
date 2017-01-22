@@ -27,7 +27,7 @@ class PyTest(TestCommand):
 
 setup(
     name='freepacktbook',
-    version='1.0.0',
+    version='1.0.1',
     description='Claim Your Free PacktPub eBook',
     author='Adam Bogdał',
     author_email='adam@bogdal.pl',
