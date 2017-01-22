@@ -37,7 +37,7 @@ def test_claim_free_ebook(packtpub_client):
 def test_my_books(packtpub_client):
     books = packtpub_client.my_books()
     assert books[0]['id'] == BOOK_ID
-    assert books[0]['title'] == '%s [eBook]' % (BOOK_TITLE,)
+    assert books[0]['title'] == BOOK_TITLE
 
 
 @vcr.use_cassette

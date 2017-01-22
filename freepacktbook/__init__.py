@@ -133,8 +133,9 @@ class FreePacktBook(object):
         for line in lines:
             if not line.get('nid'):
                 continue
+            title = line.find('div', {'class': 'title'}).getText().strip()
             books.append({
-                'title': line.find('div', {'class': 'title'}).getText().strip(),
+                'title': title.replace(' [eBook]', ''),
                 'book_url': self.base_url + line.find('div', {
                     'class': 'product-thumbnail'}).a['href'],
                 'id': line['nid']})
