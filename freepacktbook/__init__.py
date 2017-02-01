@@ -1,4 +1,4 @@
-from os import environ, mkdir, path
+from os import environ, makedirs, path, rename
 from argparse import ArgumentParser, HelpFormatter
 import logging
 from operator import attrgetter
@@ -61,7 +61,7 @@ class FreePacktBook(object):
 
     def download_file(self, url, file_path, override=False):
         if not path.exists(path.dirname(file_path)):
-            mkdir(path.dirname(file_path))
+            makedirs(path.dirname(file_path))
         if not path.exists(file_path) or override:
             response = self.session.get(url, stream=True)
             total = int(response.headers.get('Content-Length', 0))
@@ -72,11 +72,13 @@ class FreePacktBook(object):
             progress = tqdm(
                 total=total, leave=True, unit_scale=chunk_size, unit='B',
                 desc='Downloading %s' % (filename,))
-            with open(file_path, 'wb') as f:
+            temp_file_path = '%s_incomplete' % (file_path,)
+            with open(temp_file_path, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=chunk_size):
                     if chunk:
                         f.write(chunk)
                         progress.update(chunk_size)
+            rename(temp_file_path, file_path)
             progress.close()
 
     @auth_required
