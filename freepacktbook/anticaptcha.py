@@ -13,7 +13,7 @@ class Anticaptcha(object):
     create_task_url = base_url + '/createTask'
     get_task_result_url = base_url + '/getTaskResult'
     language_pool = 'en'
-    soft_id = 0
+    soft_id = 850
 
     def __init__(self, api_key):
         self.api_key = api_key

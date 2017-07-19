@@ -18,17 +18,20 @@ Claim Your `Free PacktPub eBook <https://www.packtpub.com/packt/offers/free-lear
 
   $ export PACKTPUB_EMAIL=my@email.com
   $ export PACKTPUB_PASSWORD=my_password
-  
+  $ export ANTICAPTCHA_KEY=api_key
+
   $ claim_free_ebook
-  
+
+``Freepacktbook`` uses paid captcha solving service `Anti-Captcha <http://getcaptchasolution.com/pfiufdwhhv>`_ (referral link), which costs $2 for 1k captchas.
+
 Claim your daily free PacktPub ebook and download it:
 
 .. code-block:: bash
 
     $ export PACKTPUB_BOOKS_DIR=/path/to/my/books
-    
+
     $ claim_free_ebook --download
-    
+
 **Download all your ebooks:**
 
 ``freepacktbook`` allows you to backup all your ebooks and code files.
@@ -51,7 +54,7 @@ Edit the current crontab:
 .. code-block:: bash
 
     $ crontab -e
-    
+
 Add the following lines:
 
 .. code-block:: bash
@@ -60,15 +63,16 @@ Add the following lines:
     SHELL=/bin/bash
     PACKTPUB_EMAIL='my@email.com'
     PACKTPUB_PASSWORD='my_password'
-    
+    ANTICAPTCHA_KEY='api_key'
+
     0 8 * * * /path/to/claim_free_ebook >> /tmp/claim_free_ebook.log 2>&1
-    
+
 This command shows the direct path to ``claim_free_ebook``:
 
 .. code-block:: bash
-    
+
     which claim_free_ebook
-    
+
 
 Notifications (optional)
 ------------------------
@@ -81,7 +85,7 @@ Set additionally the following environment variables:
 
   export SLACK_URL=https://hooks.slack.com/services/...
   export SLACK_CHANNEL=random
-  
+
   $ claim_free_ebook --slack
 
 .. image:: https://github-bogdal.s3.amazonaws.com/freepacktbook/slack.png
@@ -102,7 +106,7 @@ If you want to change the default time zone, use the ``TZ`` build argument:
 .. code-block:: bash
 
     $ docker build --build-arg TZ=UTC -t freepacktbook .
-    
+
 Run a new container:
 
 .. code-block:: bash
@@ -111,6 +115,7 @@ Run a new container:
         --name freepacktbook \
         -e PACKTPUB_EMAIL=<my-packtpub-email> \
         -e PACKTPUB_PASSWORD=<my-packtpub-password> \
+        -e ANTICAPTCHA_KEY=<api_key> \
       freepacktbook
 
 The ``PACKTPUB_ARGS`` env variable passes the additional arguments to the ``claim_free_ebook`` command:
@@ -122,6 +127,7 @@ The ``PACKTPUB_ARGS`` env variable passes the additional arguments to the ``clai
         --restart=always \
         -e PACKTPUB_EMAIL=<my-packtpub-email> \
         -e PACKTPUB_PASSWORD=<my-packtpub-password> \
+        -e ANTICAPTCHA_KEY=<api_key> \
         -e PACKTPUB_ARGS='--download' \
         -v <path-to-books-dir>:/data \
       freepacktbook
