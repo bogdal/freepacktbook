@@ -45,6 +45,7 @@ setup(
         'mock',
         'pytest>=2.8.1',
         'pytest-cov',
+        'requests-mock',
         'vcrpy>=1.7.3'],
     classifiers=[
         'Environment :: Web Environment',
