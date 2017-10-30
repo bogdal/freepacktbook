@@ -1,4 +1,5 @@
 .*
+!.circleci
 !.coveragerc
 !.dockerignore
 !.gitignore
