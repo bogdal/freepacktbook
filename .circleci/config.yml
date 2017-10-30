@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker:17.07.0-ce-git
+    steps:
+      - run: apk add --no-cache --no-progress python2-dev python3-dev
+      - run: pip3 install codecov tox
+      - checkout
+      - setup_remote_docker
+      - run: tox -- -x tests --cov
+      - run: codecov
+      - deploy:
+          name: Deploy docker image
+          command: |
+            if [ "${CIRCLE_TAG}" != "" ]; then
+                docker build -t $DOCKER_REPOSITORY:latest .
+                docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+                docker tag $DOCKER_REPOSITORY:latest $DOCKER_REPOSITORY:$CIRCLE_TAG
+                docker push $DOCKER_REPOSITORY:$CIRCLE_TAG
+                docker push $DOCKER_REPOSITORY:latest
+            fi
