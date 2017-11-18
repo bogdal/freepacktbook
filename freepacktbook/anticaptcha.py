@@ -22,8 +22,8 @@ class Anticaptcha(object):
     def _post(self, url, **kwargs):
         response = self.session.post(url, **kwargs).json()
         if response.get('errorId'):
-            raise AnticaptchaError(response.get('%s: %s' % (
-                response.get('errorCode'), response.get('errorDescription'))))
+            raise AnticaptchaError('%s: %s' % (
+                response.get('errorCode'), response.get('errorDescription')))
         return response
 
     def _create_task(self, url, site_key):
