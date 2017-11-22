@@ -89,12 +89,19 @@ class FreePacktBook(object):
         raise ImproperlyConfiguredError('Captcha solver is required.')
 
     @auth_required
+    def should_claim(self, book):
+        response = self.session.get(book['book_url'])
+        page = BeautifulSoup(response.text, 'html.parser')
+        can_download = page.find('div', {'class': 'book-owned-download-inner'})
+        return not can_download
+
+    @auth_required
     def claim_free_ebook(self):
         book = self.get_book_details()
-        response = self.session.post(book['claim_url'], data={
-            'g-recaptcha-response': self.get_recaptcha_response(book['site_key'])})
-        assert response.url == self.my_books_url
-        book.update({'url': self.url})
+        if self.should_claim(book):
+            response = self.session.post(book['claim_url'], data={
+                'g-recaptcha-response': self.get_recaptcha_response(book['site_key'])})
+            assert response.url == self.my_books_url
         return book
 
     def get_book_details(self, page=None):
@@ -113,6 +120,7 @@ class FreePacktBook(object):
             'book_url': self.base_url + main_book_image.a['href'],
             'image_url': 'https:%s' % main_book_image.img['src'],
             'claim_url': self.base_url + claim_url,
+            'url': self.url,
             'id': book_id,
             'site_key': re.search(
                 "Packt.offers.onLoadRecaptcha\(\'(.+?)\'\)", page.getText()).groups()[0]}
