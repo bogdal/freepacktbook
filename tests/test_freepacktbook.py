@@ -71,6 +71,19 @@ def test_download_code_files(packtpub_client, monkeypatch):
     assert result.call_args[0][0] == '/test/Test Book/test_book_code.zip_incomplete'
 
 
+def test_should_claim(packtpub_client):
+    book = {'book_url': 'http://book-url'}
+    content = '''
+        <div class="book-owned-download-inner float-left ">
+            <div class="book-download-logo"></div>
+            <input type="submit" class="form-submit" value="Download">
+        </div>
+    '''
+    with requests_mock.mock() as m:
+        m.get(book['book_url'], text=content)
+        assert packtpub_client.should_claim(book) is False
+
+
 @vcr.use_cassette
 def test_user_credentials():
     client = FreePacktBook('fake@user.com', 'not-real')
