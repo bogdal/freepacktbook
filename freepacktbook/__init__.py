@@ -5,12 +5,13 @@ from operator import attrgetter
 from .anticaptcha import Anticaptcha
 from .freepacktbook import FreePacktBook, FreePacktBookAnticaptcha
 from .slack import SlackNotification
+from .pushover import PushoverNotification
 from .utils import env_variables_required, check_config
 
 __all__ = [
     'Anticaptcha',
     'FreePacktBook', 'FreePacktBookAnticaptcha',
-    'SlackNotification']
+    'SlackNotification', 'PushoverNotification']
 
 
 def download_parser(description):
@@ -38,6 +39,8 @@ def claim_free_ebook():
         '--download', action='store_true', help='download ebook')
     parser.add_argument(
         '--slack', action='store_true', help='send Slack notification')
+    parser.add_argument(
+        '--pushover', action='store_true', help='send Pushover notification')
     env_args = environ.get('PACKTPUB_ARGS')
     args = parser.parse_args(env_args.split() if env_args else None)
     if args.download:
@@ -56,6 +59,11 @@ def claim_free_ebook():
         slack_notification = SlackNotification(
             environ.get('SLACK_URL'), environ.get('SLACK_CHANNEL'))
         slack_notification.notify(book)
+
+    if args.pushover:
+        pushover_notification = PushoverNotification(
+            environ.get('PUSHOVER_USER'), environ.get('PUSHOVER_TOKEN'))
+        pushover_notification.notify(book)
     print(book['title'])
 
 
