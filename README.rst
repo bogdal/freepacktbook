@@ -88,7 +88,7 @@ Set additionally the following environment variables:
 
   $ claim_free_ebook --slack
 
-..
+.. image:: https://github-bogdal.s3.amazonaws.com/freepacktbook/slack.png
 
 ``Pushover`` **integration**
 
@@ -101,7 +101,7 @@ Set additionally the following environment variables:
 
   $ claim_free_ebook --pushover
 
-.. image:: https://github-bogdal.s3.amazonaws.com/freepacktbook/slack.png
+..
 
 ..
 
