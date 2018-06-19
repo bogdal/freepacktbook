@@ -90,6 +90,21 @@ Set additionally the following environment variables:
 
 .. image:: https://github-bogdal.s3.amazonaws.com/freepacktbook/slack.png
 
+``Pushover`` **integration**
+
+Set additionally the following environment variables:
+
+.. code-block:: bash
+
+  export PUSHOVER_USER=random
+  export PUSHOVER_TOKEN=random
+
+  $ claim_free_ebook --pushover
+
+..
+
+..
+
 Docker image
 ------------
 
