@@ -26,7 +26,8 @@ class PushoverNotification(object):
         }
 
         try:
-            image_content = get_image_content(data['image_url'].replace(' ', '%20'))
+            image_content = self.get_image_content(
+                data['image_url'].replace(' ', '%20'))
         except Exception:
             files = None
         else:
