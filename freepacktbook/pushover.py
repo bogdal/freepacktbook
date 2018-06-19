@@ -21,7 +21,8 @@ class PushoverNotification(object):
             'title': data['title'],
             'url': data['book_url'],
             'url_title': data['title'],
-            'message': 'Today\'s Free eBook\n%s\n%s' % data['title'], data['description']
+            'message': 'Today\'s Free eBook\n%s\n%s' % (
+                data['title'], data['description'])
         }
 
         try:
@@ -34,7 +35,5 @@ class PushoverNotification(object):
         requests.post(
             self.pushover_api, 
             data=payload, 
-            files={
-                'attachment': ('cover.jpg', image_content)
-            }
+            files=files
         )
