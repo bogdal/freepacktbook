@@ -16,9 +16,9 @@ def test_should_notify():
     data= {'title': 'ttt', 'url': 'someUrl.com', 'image_url': 'aa.com', 'book_url': 'bu', 'description': 'desc'}
 
     with requests_mock.mock() as m:
-        m.post(slackUrl)
-        slackNotif.notify(data)
-        assert m.called is True
+	m.post(slackUrl)
+	slackNotif.notify(data)
+	assert m.called is True
 	assert m.called_once is True       
 
 def test_should_not_notify():
