@@ -1,34 +1,38 @@
-import os
-import json
-from sys import version_info
-
-from mock import mock_open, patch
-import pytest
 import requests_mock
-import requests
 
 from freepacktbook.slack import SlackNotification
 
+
 def test_should_notify():
     channel = '#abc'
-    slackUrl = 'http://my.slack.com'
-    slackNotif = SlackNotification(slackUrl, channel)	
-    data= {'title': 'ttt', 'url': 'someUrl.com', 'image_url': 'aa.com', 'book_url': 'bu', 'description': 'desc'}
+    slack_url = 'http://my.slack.com'
+    slack_notification = SlackNotification(slack_url, channel)
+    data = {
+        'title': 'ttt',
+        'url': 'someUrl.com',
+        'image_url': 'aa.com',
+        'book_url': 'bu',
+        'description': 'desc'}
 
-    with requests_mock.mock() as m:
-	m.post(slackUrl)
-	slackNotif.notify(data)
-	assert m.called is True
-	assert m.called_once is True       
+    with requests_mock.mock() as req_mock:
+        req_mock.post(slack_url)
+        slack_notification.notify(data)
+        assert req_mock.called is True
+        assert req_mock.called_once is True
+
 
 def test_should_not_notify():
     channel = '#abc'
-    slackUrl = None
-    slackNotif = SlackNotification(slackUrl, channel)	
-    data= {'title': 'ttt', 'url': 'someUrl.com', 'image_url': 'aa.com', 'book_url': 'bu', 'description': 'desc'}
+    slack_url = None
+    slack_notification = SlackNotification(slack_url, channel)
+    data = {
+        'title': 'ttt',
+        'url': 'someUrl.com',
+        'image_url': 'aa.com',
+        'book_url': 'bu',
+        'description': 'desc'}
 
-    with requests_mock.mock() as m:
-        m.post(slackUrl)
-        slackNotif.notify(data)
-        assert m.called is False
-
+    with requests_mock.mock() as req_mock:
+        req_mock.post(slack_url)
+        slack_notification.notify(data)
+        assert req_mock.called is False
