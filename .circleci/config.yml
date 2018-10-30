@@ -5,9 +5,10 @@ jobs:
       - image: docker:17.07.0-ce-git
     steps:
       - run: apk add --no-cache --no-progress python2-dev python3-dev
-      - run: pip3 install codecov tox
+      - run: pip3 install black codecov tox
       - checkout
       - setup_remote_docker
+      - run: black --check freepacktbook tests
       - run: tox -- -x tests --cov
       - run: codecov
       - deploy:
