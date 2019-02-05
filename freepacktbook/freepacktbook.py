@@ -1,4 +1,6 @@
 from os import makedirs, path, rename
+import datetime
+import json
 import logging
 import random
 import re
@@ -34,10 +36,14 @@ class Session(requests.Session):
 class FreePacktBook(object):
 
     base_url = "https://www.packtpub.com"
+    book_details_url = "https://static.packt-cdn.com/products/%(book_id)s/summary"
+    offer_url = "https://services.packtpub.com/free-learning-v1/offers"
+    url = base_url + "/packt/offers/free-learning"
+    claim_url = "https://services.packtpub.com/free-learning-v1/users/%(user_uuid)s/claims/%(offer_id)s"
+    my_books_url = "https://services.packtpub.com/entitlements-v1/users/me/products"
+
     code_files_url = base_url + "/code_download/%(id)s"
     download_url = base_url + "/ebook_download/%(book_id)s/%(format)s"
-    my_books_url = base_url + "/account/my-ebooks"
-    url = base_url + "/packt/offers/free-learning"
 
     book_formats = ["epub", "mobi", "pdf"]
 
@@ -49,8 +55,8 @@ class FreePacktBook(object):
 
     def auth_required(func, *args, **kwargs):
         def decorated(self, *args, **kwargs):
-            if "SESS_live" not in self.session.cookies:
-                response = self.session.post(
+            if "access_token_live" not in self.session.cookies:
+                self.session.post(
                     self.url,
                     {
                         "email": self.email,
@@ -58,10 +64,12 @@ class FreePacktBook(object):
                         "form_id": "packt_user_login_form",
                     },
                 )
-                page = BeautifulSoup(response.text, "html.parser")
-                error = page.find("div", {"class": "messages error"})
-                if error:
-                    raise InvalidCredentialsError(error.getText())
+                if "access_token_live" not in self.session.cookies:
+                    raise InvalidCredentialsError()
+                access_token = self.session.cookies["access_token_live"]
+                self.session.headers.update(
+                    {"Authorization": "Bearer %s" % access_token}
+                )
             return func(self, *args, **kwargs)
 
         return decorated
@@ -99,47 +107,48 @@ class FreePacktBook(object):
 
     @auth_required
     def should_claim(self, book):
-        response = self.session.get(book["book_url"])
-        page = BeautifulSoup(response.text, "html.parser")
-        can_download = page.find("div", {"class": "book-owned-download-inner"})
-        return not can_download
+        response = self.session.get(self.my_books_url, params={"search": book["title"]})
+        return "count" not in response.json()
 
     @auth_required
     def claim_free_ebook(self):
-        book = self.get_book_details()
+        offer = self.get_offer()
+        book = self.get_book_details(offer["book_id"])
         if self.should_claim(book):
-            response = self.session.post(
-                book["claim_url"],
-                data={
-                    "g-recaptcha-response": self.get_recaptcha_response(
-                        book["site_key"]
-                    )
-                },
+            keys = self.get_claim_keys()
+            url = self.claim_url % {
+                "user_uuid": keys["user_uuid"],
+                "offer_id": offer["offer_id"],
+            }
+            data = json.dumps(
+                {"recaptcha": self.get_recaptcha_response(keys["site_key"])}
             )
-            assert response.url == self.my_books_url
+            data = self.session.put(url, data=data).json()
+            if "errorCode" in data:
+                raise Exception(data["message"])
         return book
 
-    def get_book_details(self, page=None):
-        if page is None:
-            response = self.session.get(self.url)
-            page = BeautifulSoup(response.text, "html.parser")
-        summary = page.find("div", {"class": "dotd-main-book-summary"})
-        main_book_image = page.find("div", {"class": "dotd-main-book-image"})
-        claim_url = page.find("div", {"class": "free-ebook"}).form["action"]
-        book_id = re.search(r"claim/(\d+)/", claim_url).groups()[0]
-        title = summary.find("div", {"class": "dotd-title"}).getText().strip()
-        title = title.replace(":", " -")
+    def get_offer(self):
+        today = datetime.date.today()
+        response = self.session.get(
+            self.offer_url,
+            params={"dateFrom": today, "dateTo": today + datetime.timedelta(days=1)},
+        )
+        data = response.json()["data"][0]
+        return {"offer_id": data["id"], "book_id": data["productId"]}
+
+    def get_book_details(self, book_id):
+        response = self.session.get(self.book_details_url % {"book_id": book_id})
+        return response.json()
+
+    @auth_required
+    def get_claim_keys(self):
+        response = self.session.get(self.url)
         return {
-            "title": title,
-            "description": summary.find("div", {"class": None}).getText().strip(),
-            "book_url": self.base_url + main_book_image.a["href"],
-            "image_url": "https:%s" % main_book_image.img["src"],
-            "claim_url": self.base_url + claim_url,
-            "url": self.url,
-            "id": book_id,
             "site_key": re.search(
-                "Packt.offers.onLoadRecaptcha\('(.+?)'\)", page.getText()
+                "Packt.offers.onLoadRecaptcha\('(.+?)'\)", response.text
             ).groups()[0],
+            "user_uuid": re.search('uuid":"(.+?)"', response.text).groups()[0],
         }
 
     @auth_required
