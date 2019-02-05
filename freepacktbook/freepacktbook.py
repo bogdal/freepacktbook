@@ -36,14 +36,12 @@ class Session(requests.Session):
 class FreePacktBook(object):
 
     base_url = "https://www.packtpub.com"
+    url = base_url + "/packt/offers/free-learning"
     book_details_url = "https://static.packt-cdn.com/products/%(book_id)s/summary"
     offer_url = "https://services.packtpub.com/free-learning-v1/offers"
-    url = base_url + "/packt/offers/free-learning"
     claim_url = "https://services.packtpub.com/free-learning-v1/users/%(user_uuid)s/claims/%(offer_id)s"
     my_books_url = "https://services.packtpub.com/entitlements-v1/users/me/products"
-
-    code_files_url = base_url + "/code_download/%(id)s"
-    download_url = base_url + "/ebook_download/%(book_id)s/%(format)s"
+    download_url = "https://services.packtpub.com/products-v1/products/%(book_id)s/files/%(format)s"
 
     book_formats = ["epub", "mobi", "pdf"]
 
@@ -157,41 +155,45 @@ class FreePacktBook(object):
         if formats is None:
             formats = self.book_formats
         for book_format in formats:
-            url = self.download_url % {"book_id": book["id"], "format": book_format}
-            slug = slugify(title, separator="_")
-            file_path = "%s/%s/%s.%s" % (destination_dir, title, slug, book_format)
-            self.download_file(url, file_path, override=override)
+            url = self.download_url % {
+                "book_id": book["productId"],
+                "format": book_format,
+            }
+            response = self.session.get(url).json()
+            if "data" in response:
+                book_url = response["data"]
+                slug = slugify(title, separator="_")
+                file_path = "%s/%s/%s.%s" % (destination_dir, title, slug, book_format)
+                if book_format == "code":
+                    file_path = "%s/%s/%s_code.zip" % (destination_dir, title, slug)
+                self.download_file(book_url, file_path, override=override)
 
     @auth_required
     def download_code_files(self, book, destination_dir=".", override=False):
-        title = book["title"]
-        url = self.code_files_url % {"id": int(book["id"]) + 1}
-        file_path = "%s/%s/%s_code.zip" % (
-            destination_dir,
-            title,
-            slugify(title, separator="_"),
+        return self.download_book(
+            book, destination_dir, formats=["code"], override=override
         )
-        self.download_file(url, file_path, override=override)
 
     @auth_required
-    def my_books(self):
+    def my_books(self, max_pages=10):
+        per_page = 10
         books = []
-        response = self.session.get(self.my_books_url)
-        page = BeautifulSoup(response.text, "html.parser")
-        lines = page.find_all("div", {"class": "product-line"})
-        for line in lines:
-            if not line.get("nid"):
-                continue
-            title = line.find("div", {"class": "title"}).getText().strip()
-            title = title.replace(" [eBook]", "").replace(":", " -")
-            books.append(
-                {
-                    "title": title,
-                    "book_url": self.base_url
-                    + line.find("div", {"class": "product-thumbnail"}).a["href"],
-                    "id": line["nid"],
-                }
-            )
+        for page_number in range(0, max_pages):
+            data = self.session.get(
+                self.my_books_url,
+                params={
+                    "sort": "createdAt:DESC",
+                    "offset": page_number * per_page,
+                    "limit": per_page,
+                },
+            ).json()
+            books += [
+                {"title": book["productName"], "productId": book["productId"]}
+                for book in data["data"]
+            ]
+            if page_number * per_page + per_page > data["count"]:
+                break
+
         return books
 
 
