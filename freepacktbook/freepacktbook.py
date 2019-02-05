@@ -5,7 +5,6 @@ import logging
 import random
 import re
 
-from bs4 import BeautifulSoup
 import requests
 from slugify import slugify
 from tqdm import tqdm
