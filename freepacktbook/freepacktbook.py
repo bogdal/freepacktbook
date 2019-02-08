@@ -77,8 +77,6 @@ class FreePacktBook(object):
         if not path.exists(file_path) or override:
             response = self.session.get(url, stream=True)
             total = int(response.headers.get("Content-Length", 0))
-            print(response.headers)
-            print("total", total)
             if not total:
                 return
             filename = path.split(file_path)[1]
@@ -175,7 +173,7 @@ class FreePacktBook(object):
 
     @auth_required
     def my_books(self, max_pages=10):
-        per_page = 10
+        per_page = 25
         books = []
         for page_number in range(0, max_pages):
             data = self.session.get(
